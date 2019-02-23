@@ -1525,7 +1525,7 @@ body.is-loading #header .content .inner {
   font-size: 0.6rem;
   opacity: 0.75;
   margin-bottom: 0;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 #footer .prior-years {
