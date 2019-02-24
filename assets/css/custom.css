@@ -1,0 +1,110 @@
+/*
+  Additional CSS, bmc@clapper.org
+
+  Allows original theme-supplied CSS to remain intact.
+*/
+
+body {
+  line-height: 1.5 !important;
+}
+
+img.sponsor-logo {
+  width: 400px;
+}
+
+img.nescala-logo {
+  width: 100px;
+}
+
+
+@media screen and (max-width: 1680px) {
+  img.sponsor-logo {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  img.sponsor-logo {
+    width: 250px !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  img.nescala-logo {
+    width: 80px !important;
+  }
+
+  img.sponsor-logo {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  img.nescala-logo {
+    width: 70px !important;
+  }
+
+  img.sponsor-logo {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  img.nescala-logo {
+    width: 50px !important;
+  }
+
+  img.sponsor-logo {
+    width: 150px !important;
+  }
+}
+
+#header {
+  background: rgb(72, 0, 0) !important;
+}
+
+#header > nav ul li a.active {
+  background: #fff;
+  color: rgb(72, 0, 0) !important;
+}
+
+#main > section > .container {
+  padding: 2em 0 2em 0 !important;
+}
+
+p {
+  margin: 0 0 .75em 0 !important;
+}
+
+header.major h2 {
+  color: rgb(72, 0, 0) !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: rgb(72, 0, 0) !important;
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+  border-color: rgb(72, 0, 0) !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+  background-color: rgb(72, 0, 0) !important;
+  color: #ffffff !important;
+}
+
+ul.feature-icons li:before {
+  background: rgb(72, 0, 0) !important;
+}
+
+#titleBar .toggle:before {
+  background: rgb(72, 0, 0) !important;
+}
