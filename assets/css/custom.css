@@ -8,10 +8,6 @@ body {
   line-height: 1.5 !important;
 }
 
-img.sponsor-logo {
-  height: 40px;
-}
-
 img.nescala-logo {
   width: 100px;
 }
@@ -20,15 +16,14 @@ img.media-partner-logo {
   width: 200px;
 }
 
-a.logo:hover, a.logo:visited, a.logo:link, a.logo:active {
+a.company-logo:hover, a.company-logo:visited, a.company-logo:link, a.company-logo:active {
   text-decoration: none !important;
-  border: none !important;
+  border-bottom: none !important;
   text-align: left !important;
 }
 
-a.logo img {
+a.company-logo img {
   border: none !important;
-
 }
 
 .announcement {
@@ -42,21 +37,9 @@ a.logo img {
 }
 
 @media screen and (max-width: 1680px) {
-  img.sponsor-logo {
-    height: 40px;
-  }
-  span.coatue-logo {
-    font-size: 52px !important;
-  }
 }
 
 @media screen and (max-width: 1280px) {
-  img.sponsor-logo {
-    height: 36px;
-  }
-  span.coatue-logo {
-    font-size: 48px !important;
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -66,13 +49,6 @@ a.logo img {
 
   img.media-partner-logo {
     width: 150px !important;
-  }
-
-  img.sponsor-logo {
-    height: 28px;
-  }
-  span.coatue-logo {
-    font-size: 36px !important;
   }
 }
 
@@ -84,14 +60,6 @@ a.logo img {
   img.media-partner-logo {
     width: 150px !important;
   }
-
-  img.sponsor-logo {
-    height: 24px;
-  }
-
-  span.coatue-logo {
-    font-size: 36px !important;
-  }
 }
 
 @media screen and (max-width: 736px) {
@@ -100,10 +68,6 @@ a.logo img {
   }
 
   img.media-partner-logo {
-    width: 150px !important;
-  }
-
-  img.sponsor-logo {
     width: 150px !important;
   }
 }
