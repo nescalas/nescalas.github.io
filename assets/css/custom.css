@@ -16,6 +16,16 @@ img.nescala-logo {
   width: 100px;
 }
 
+img.media-partner-logo {
+  width: 200px;
+}
+
+#media-partners a:hover, a:visited, a:link, a:active {
+  text-decoration: none !important;
+  text-decoration-style: unset !important;
+  text-decoration-color: #ffffff !important;
+}
+
 .announcement {
   border: 1px solid black;
   padding: 0.5em;
@@ -43,6 +53,10 @@ img.nescala-logo {
     width: 80px !important;
   }
 
+  img.media-partner-logo {
+    width: 150px !important;
+  }
+
   img.sponsor-logo {
     width: 200px !important;
   }
@@ -53,6 +67,10 @@ img.nescala-logo {
     width: 70px !important;
   }
 
+  img.media-partner-logo {
+    width: 150px !important;
+  }
+
   img.sponsor-logo {
     width: 150px !important;
   }
@@ -61,6 +79,10 @@ img.nescala-logo {
 @media screen and (max-width: 736px) {
   img.nescala-logo {
     width: 50px !important;
+  }
+
+  img.media-partner-logo {
+    width: 150px !important;
   }
 
   img.sponsor-logo {
