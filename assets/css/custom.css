@@ -9,7 +9,7 @@ body {
 }
 
 img.sponsor-logo {
-  width: 400px;
+  height: 40px;
 }
 
 img.nescala-logo {
@@ -20,10 +20,14 @@ img.media-partner-logo {
   width: 200px;
 }
 
-#media-partners a:hover, a:visited, a:link, a:active {
+a.logo:hover, a.logo:visited, a.logo:link, a.logo:active {
   text-decoration: none !important;
-  text-decoration-style: unset !important;
-  text-decoration-color: #ffffff !important;
+  border: none !important;
+}
+
+a.logo img {
+  border: none !important;
+
 }
 
 .announcement {
@@ -38,13 +42,19 @@ img.media-partner-logo {
 
 @media screen and (max-width: 1680px) {
   img.sponsor-logo {
-    width: 300px !important;
+    height: 40px;
+  }
+  span.coatue-logo {
+    font-size: 52px !important;
   }
 }
 
 @media screen and (max-width: 1280px) {
   img.sponsor-logo {
-    width: 250px !important;
+    height: 36px;
+  }
+  span.coatue-logo {
+    font-size: 48px !important;
   }
 }
 
@@ -58,7 +68,10 @@ img.media-partner-logo {
   }
 
   img.sponsor-logo {
-    width: 200px !important;
+    height: 28px;
+  }
+  span.coatue-logo {
+    font-size: 36px !important;
   }
 }
 
@@ -72,7 +85,11 @@ img.media-partner-logo {
   }
 
   img.sponsor-logo {
-    width: 150px !important;
+    height: 24px;
+  }
+
+  span.coatue-logo {
+    font-size: 36px !important;
   }
 }
 
