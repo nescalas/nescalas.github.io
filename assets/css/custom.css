@@ -85,6 +85,10 @@ a.company-logo img {
   padding: 2em 0 2em 0 !important;
 }
 
+section > .container ol {
+  margin-bottom: 20px;
+}
+
 p {
   margin: 0 0 .75em 0 !important;
 }
