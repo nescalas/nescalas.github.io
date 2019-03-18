@@ -1,0 +1,1375 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+  <title>NEScala 2019: Proposed Talks</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@nescalas">
+  <meta name="twitter:title" content="nescala 2019">
+  <meta name="twitter:description"
+        content="Your friendly neighborhood Scala conference, chugging through the Northeast since 2011.">
+  <meta name="twitter:image" content="/images/nescalas-logo.png">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/custom.css"/>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+</head>
+<body class="is-preload">
+
+<!-- Header -->
+<section id="header">
+  <header>
+    <span class="image avatar"><img src="images/nescalas-logo.png" alt=""/></span>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#long">Long Talks</a></li>
+      <li><a href="#medium">Medium Talks</a></li>
+      <li><a href="#lightning">Lightning Talks</a></li>
+    </ul>
+  </nav>
+  <footer>
+    <ul class="icons">
+      <li>
+        <a target="_blank" href="https://twitter.com/nescalas" class="icon fa-twitter"><span class="label">Twitter</span></a>
+      </li>
+    </ul>
+  </footer>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Main -->
+  <div id="main">
+
+    <section id="proposed-talks">
+      <div class="image main" data-position="center">
+        <img src="images/philly-boathouse-row.jpg" alt=""/>
+      </div>
+      <div class="container">
+        <header class="major">
+          <!--
+            Note that id="logo" defines the logo that shows up at the very top in
+            the mobile layout. See js/main.js. If not set, "undefined" will show
+            up. We want it to be empty.
+          -->
+          <span id="logo"></span>
+          <h2>
+            Northeast Scala Symposium <span style="color: #777">2019</span><br/>
+            Proposed Talks
+          </h2>
+        </header>
+
+        <div class="talks-block">
+          <h3 id="long">Long Talks (45 minutes)</h3>
+
+          <div class="talk">
+            <div class="talk-title">Fire and Fury</div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              Fury is an exciting new build tool and dependency manager for Scala
+              with bold aspirations to revolutionize the way we define and
+              distribute source builds. You will learn Fury’s radical—but
+              simple—model, see its fast and beautiful UI, and start to believe
+              how Fury can be the future of building Scala!
+            </div>
+            <div class="full-descr-button">
+              <button id="f0" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f0-description" class="talk-descr" style="display: none">
+              <p>
+                I started work on Fury on my flight home from NE Scala 2018, so
+                this year’s symposium marks an important anniversary for Fury, as
+                it approaches a first release.
+              </p>
+              <p>
+                Fury is a radical new build tool for developing software written
+                in Scala and other JVM languages. It starts with a completely blank
+                canvas and not only takes on the challenges of developing maintainable
+                and composable build definitions, but has bold aspirations to shake
+                up the way we publish and distribute software, too: Fury aims to
+                make binary compatibility issues a thing of the past.
+              </p>
+              <p>
+                This talk will be a rapid, but practical demonstration of using
+                Fury. You will learn how easy it is to create builds for existing
+                Scala projects and for new ones. You will discover how fast, intuitive
+                and responsive Fury’s user interface is, and will get to see Fury’s
+                out-of-the-box support for common (but traditionally difficult)
+                build tasks like code generation, benchmarking and publishing.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Solving a Rubik's Cube with Group Theory in Scala
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>Have you solved a Rubik’s Cube Yet?</p>
+              <p>
+                In five minutes, I’ll teach everything you need to know to solve
+                it. Really! Then, with the easy stuff out of the way, we’ll dive
+                into the math behind the solution, teach it to a computer, and
+                demonstrate the result with a live solve on a Bluetooth Rubik’s
+                Cube.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f1" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f1-description" class="talk-descr" style="display: none">
+              <p>
+                The Rubik’s Cube is a famous puzzle that’s notorious for being
+                difficult to solve. In this talk, we’ll show how math can be used
+                to simplify the problem to the point that a human can solve it
+                intuitively or write a clear and concise program do so.
+              </p>
+              <p>
+                We’ll begin by covering some basic Group Theory concepts, and
+                demonstrate how these can be used to model a Rubik’s Cube in a
+                simple way that lends itself well to analysis. Examples will be
+                demonstrated using a Bluetooth enabled Rubik’s Cube that allows for
+                automatic analysis on the big screen while preserving speed and
+                flexibility. Next, we’ll code up a solution that directly takes
+                advantage of this mathematical structure. For this we’ll leverage
+                an existing scala library for computational group theory. Finally,
+                we’ll test this program with a live solve on our Bluetooth Rubik’s
+                Cube, so we can analyze the produced solution in a step-by-step
+                fashion.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">A Tale of Two Type Systems</div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              What are typeclasses and why do so many functional libraries use
+              them? How do they fit into our standard understanding of inheritance
+              and interfaces? What systems in the language exist that are designed
+              to help us think about and model programs?
+            </div>
+            <div class="full-descr-button">
+              <button id="f2" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f2-description" class="talk-descr" style="display: none">
+              We live in a time where communities seem to quickly become polarized.
+              Some new companies and community members who would have initially
+              considered Scala are instead looking to Kotlin, while others are
+              jumping ship completely for the purer shores of Haskell. From strong
+              foundations, I’ll try and make the case that Scala still fulfills
+              a viable niche and continues to be a great tool for modeling problems.
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">Data Science with Apache Zeppelin</div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                Notebooks are interactive environments which combine code, markdown, plots
+                and interactive forms. This talk will highlight unique development workflow
+                benefits that notebooks provide, by demonstrating building and training
+                machine learning models for image classification using Apache Zeppelin.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Domain Driven Testing: Know What You're Doing
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                In this talk, we discuss how to use Domain knowledge around your product to
+                help improve your Software Quality. We use Domain Driven Testing tools to
+                ensure we validate what your customers work with, rather than what you
+                think they might use.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f3" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f3-description" class="talk-descr" style="display: none">
+              <p>
+                “I tested it how you told me to,” “Requirements say it’s expected,” “I
+                assumed it’s fine” – these are the common phrases you hear when customer
+                cases come up. Unfortunately, it is nothing unusual in our industry to be
+                detached from customers’ actual needs. As a result, teams regularly fail
+                when they prioritize requirements over actual behaviour that the customers
+                expect.
+              </p>
+              <p>
+                This problem of misaligned teams’ focus is where Domain Driven Testing
+                (DDT) comes into play. DDT helps developers to put themselves into the
+                customers’ shoes and see the product for what it is. This prioritization of
+                the actual behaviour over the mere following of the requirements is what
+                defines Domain Driven Testing.
+              </p>
+              <p>
+                In this talk, we discuss how knowledge of your company’s domain (aka, the
+                focus of your business) can improve your testing practices. We talk about
+                Domain Driven Design techniques, Exploratory Testing, and other methods
+                which emphasize software quality through customers’ success. We touch bases
+                on tools you can integrate into your system using Domain Driven Test
+                Pyramid, and what common mistakes you should avoid when implementing Domain
+                Driven Testing.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Great code reviews - the superpower your team needs
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                Are you a bit terrified when merging to master?
+              </p>
+              <p>
+                Do you loathe having to read hundreds of LOC to understand that PR you got
+                tagged in?
+              </p>
+              <p>
+                Do you polish and re-polish before asking for a review?
+              </p>
+              <p>
+                Then you should come to my talk. We’ll talk about how your team can be
+                awesome at reviewing code.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f4" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f4-description" class="talk-descr" style="display: none">
+              <p>
+                There is general consensus on the fact that code reviews are an important
+                step for a successful development workflow. Most organizations undergo code
+                reviews of some form.
+              </p>
+              <p>
+                However, it’s all too common to see reviewers that barely scratch the
+                surface of the work being put forth, or that offer feedback that is unclear
+                or hard to act upon. This robs the team from the opportunity to speed up
+                learning, share knowledge and context, and from generally raising the
+                quality bar on the software being built.
+              </p>
+              <p>
+                In this talk, I will share my story of encountering a new code review
+                process when joining Shopify, and the surprising learnings I found - even
+                as an experienced developer. I will discuss the tremendous gains
+                individuals and teams can reap from a thoughtful, well structured review
+                process. I will also share some practical techniques we use to help both
+                the reviewers and the reviewees do a fantastic job at crafting solid
+                deliverables.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Intro to Functional Error Encoding in Scala
+            </div>
+            <div class="talk-level">Audience Level: Beginner</div>
+            <div class="talk-abstract">
+              <p>
+                Nulls. Exceptions. We’ve all been there. But what’s the alternative? Lucky
+                us, Scala gives us three solutions out of the box. Learn how to be more
+                functional about handling your errors. There might even be monads!
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f5" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f5-description" class="talk-descr" style="display: none">
+              <p>
+                Nulls and exceptions are common tools for encoding error handling through
+                Java code, but they can be challenging to manage. Fortunately, Scala’s
+                standard library offers more functional solutions to encoding error
+                scenarios. Learn about how to use <code>Option</code>,
+                <code>Try</code>, and <code>Either</code>.
+              </p>
+              <p>
+                As long as there are Scala developers who write new code that returns <code>null</code>
+                or throws exceptions, there will be a need for a talk like this. This talk
+                is foundational for more advanced functional solutions like <code>IO</code> monads.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">Intro to Implicits</div>
+            <div class="talk-level">Audience Level: Beginner</div>
+            <div class="talk-abstract">
+              <p>
+                Implicits. Dark magic or powerful tool? Learn about Scala’s most unique and
+                powerful feature, the different kinds of implicits, and where they are best
+                to use. You too can be a functional implicit rockstar wizard.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f6" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f6-description" class="talk-descr" style="display: none">
+              <p>
+                Implicits in Scala are a uniquely powerful tool that not everyone
+                understands. We will outline the difference between implicit classes and
+                implicit parameters. We will cover where implicits are appropriate to use
+                and how library authors leverage them.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Kafka meets Functional Programming
+            </div>
+            <div class="talk-level">Audience Level: Advanced</div>
+            <div class="talk-abstract">
+              <p>
+                The talk is on “Kafka meets FP”, and the ultimate intention of proving the
+                fact that “Nothing actually stops us from striving to write a good piece of
+                software”, and how Functional Programming in Scala can make us achieve it.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f7" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f7-description" class="talk-descr" style="display: none">
+              <p>
+                Having worked for various clients as a software consultant, it has always
+                been my responsibility to write and make write good software - program that
+                is type-driven, purely functional and maintainable. With this talk, we
+                intend to prove that, <b>regardless of the complexities and impurities that we
+                have to deal when implementing a use-case, the software that we expose to
+                clients can still be made reasonable, testable, deterministic and typesafe.
+                This is done by taking a Kafka streaming application as the use case.</b>
+              </p>
+              <p>
+                As Kafka becomes a powerful stack for various companies to solve their
+                business use cases, I believe it is important to talk about how Scala and
+                FP can make us write good software that works with Kafka. Hence I am
+                titling my talk to be “Kafka meets Functional Programming”.
+              </p>
+              <p>
+                Starting from listing down some of the runtime complexities and consequent
+                challenges that we faced when playing with Kafka, I will describe a part of
+                the use case we implemented for an insurance company, where we wanted to
+                abstract out a Kafka streams application that can work for multiple
+                mobility datasets.
+              </p>
+              <p>
+                After listing down the challenges and then describing a streaming use-case,
+                we will start with an initial version of the solution written in Scala with
+                a few type class constraints. Then, we will list down a bunch of issues
+                with the code, motivating us to further improve. Then we go step by step
+                towards a final code base listing down the issues motivating us to improve
+                the code at every stage to finally reach somewhere we see <code>InvariantFunctors</code>
+                and <code>type class</code> constraints playing out nicely.
+              </p>
+              <p>
+                Next, we will focus on writing test cases for a Kafka application that
+                involves playing around with an unsafe data type such as Avro’s
+                GenericRecord. This part of the talk intends to prove that, “If bad things
+                are done for reasons, make sure we do good things in the test package.” We
+                will see some nice examples that gets us away from mutability horribleness
+                by making use of any <code>F</code> that can form <code>MonadState</code>,
+                reaching out to <code>scalacheck.Gen</code> as an instance.
+              </p>
+              <p>
+                We will also touch base through an upcoming plugin sbt-kafka-compose that
+                abstracts out the vagueness and fragility of docker integration tests with
+                Kafka. This is also a place where John’s effect rotation code using ZIO
+                being applied !
+              </p>
+              <p>
+                And hopefully, I will have more things to show, such as a pure tagless
+                final code base streamlining a kafka application. Finally we are here to
+                prove, how all these make our code extremely robust and safe!
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Reading Haskell for Scala Programmers
+            </div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              <p>
+                Haskell, the infamous! Improve your functional programming in Scala by
+                learning a tiny bit of Haskell and revealing the true essence behind type
+                classes and data classes.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f8" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f8-description" class="talk-descr" style="display: none">
+              <p>
+                Haskell is often brought up when learning functional programming in Scala,
+                but the relationship between the two can be unclear. Haskell’s syntax can
+                be foreign and unapproachable to those with traditional OOP backgrounds. We
+                will compare and contrast how concepts are encoded between Haskell and
+                Scala.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Stress Driven Development, and How to Avoid It
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                In this talk, we discuss how to manage your day and avoid the daily
+                stressors of any engineering team. The main takeaways of this presentation
+                are not only how to prevent stress from being accumulated at work, but also
+                how to organize the work itself in a productive way.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f9" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f9-description" class="talk-descr" style="display: none">
+              <p>
+                When was the last time you took a day off? How many times this week have
+                you worked overtime? These questions are related to one thing we all
+                experience on a daily basis - stress. Employees who are trapped by their
+                routine to “deliver business value at all cost”, often forget to take care
+                of themselves. Unfortunately, this work-related stress affects our loved
+                ones too, because work-life balance that we all hear about, usually means
+                work-life stress.
+              </p>
+              <p>
+                What if I were to say that it does not have to be this way? In this talk,
+                we discuss ways how to relax and avoid “Stress Driven Development.” We deep
+                dive into common stressors, and draft a comprehensive guide to removing
+                stress at work and in our personal lives.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              The Role of the Minority in the World of Technology
+            </div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              Key Takeaways:
+
+              <ul>
+                <li>Understanding of why few qualified individuals of Diversity work in IT</li>
+                <li>Strategies that technology companies can use to recruit more qualified people of diversity in the IT world</li>
+                <li>Novel recruitment policies that will enable technology companies to employ more qualified Minorities</li>
+              </ul>
+            </div>
+            <div class="full-descr-button">
+              <button id="f10" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f10-description" class="talk-descr" style="display: none">
+              <p>
+                This presentation will discuss how to cope with conversing with those who
+                are from diverse backgrounds with ease and accomplish your daily
+                connections with co-workers, who come from different backgrounds, with a
+                common goal of comprehension.
+              </p>
+              <p>
+                Necessities that makes you distinct, skills that make you stand out. The
+                diversities that make us rare and unique if it’s your ethnic background,
+                race, ethnic customs, religious beliefs, sex, sexuality, or form of
+                individuality may also be a cause of contention.
+              </p>
+              <p>
+                Discover how to bring out that, which is already within you and
+                communicate, work with individuals who are diverse as well as, striking-up
+                great conversation between one another.
+              </p>
+              <p>
+                Also, this presentation will contribute to you your attendees with
+                fostering a positive change and cultivate a more inviting place of work.
+              </p>
+              <p>
+                This presentation will discuss the impacts of diversity collectively using
+                identifying what variety can be combined with how it affects a business.
+              </p>
+              <p>
+                The presentation will assist with explaining what it signifies being an
+                inclusive place of work, offer comprehensive measures to assess best what
+                degree one’s place of work fosters inclusion a and diversity.
+              </p>
+              <p>
+                The workshop, through means of role-playing scenarios, present ways you
+                can take to impact positive philosophies at your place of work.
+              </p>
+              <p>
+                Individuals will take with them an increased perception of the
+                implications of a tolerant, inclusive and diverse place of work.
+              </p>
+              <p>
+                Individuals will take with them, along with personal skills, which one
+                will utilize to develop into promoters of social change, that will build a
+                more diverse workplace.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Understanding FP Concepts via Refactoring
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                The Reader monad sounds rather intellectual, but we can derive it from the
+                very concrete problem of passing dependencies to some computation. We’ll
+                deconstruct a number of FP concepts this way, to demystify them so you can
+                feel more confident using them and teaching them to others.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f11" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f11-description" class="talk-descr" style="display: none">
+              <p>
+                Y-combinator? Reader monad? Catamorphisms? Functional programming concepts
+                can seem intimidating, but in this talk we’ll see that we can view them as
+                solutions to refactoring problems. For example, the Reader monad sounds
+                rather intellectual, but we can derive it from the very concrete problem of
+                passing dependencies to some computation (dependency injection). We’ll
+                deconstruct a number of FP concepts this way, to demystify them so you can
+                feel more confident using them and teaching them to others.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Your Database is a Monad! Query it with Quill!
+            </div>
+            <div class="talk-level">Audience Level: Beginner</div>
+            <div class="talk-abstract">
+              <p>
+                Why does your datastore exist? So you can query it, right?
+              </p>
+              <p>
+                Wrong! It’s so you get confused by strange annotations that
+                cause opaque behaviors! —Sincerely Hibernate.
+              </p>
+              <p>
+                Wrong! It’s so you can go mad reading Query Shapes and Mapping
+                Projections! —Sincerely Slick.
+              </p>
+              <p>
+                You Bet! —Sincerely Quill.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f12" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f12-description" class="talk-descr" style="display: none">
+              <p>
+                When in the course of software development it becomes necessary to dissolve
+                the pointless limitations of misguided query generation frameworks, and
+                assume the separate and equal station to which the Laws of Mathematics and
+                Principles of Good Programming inspire them, a decent respect to the
+                notions of sanity require that they should declare the principles that
+                impel them to architect Quill.
+              </p>
+              <p>
+                We hold these truths to be self-evident. That all Queries should be
+                typesafe and composeable, and that they should be endowed by their
+                framework with Functional and Monadic Properties.
+              </p>
+              <ul>
+                <li>
+                  That to allow these capabilities in production environments, requires the
+                  consent of Ops and DBAs - who have the unalienable Right, to see the
+                  freaking query that will be executed in their environment before getting a
+                  2am phone call!
+                </li>
+                <li>
+                  That it is within the power of developers to generate queries during
+                  compile-time, such that the requirements of the previous point can easily
+                  be accommodated. This is furthermore facilitated by the use of Typeclasses
+                  to allow abstractions over query compositions during compile-time.
+                </li>
+                <li>
+                  Whenever any form of database becomes conducive to these ends, it is within
+                  the capability of the developers to easily extend the powers of Quill onto
+                  it, in order to ensure their sanity and happiness.
+                </li>
+                <li>
+                  Nor have we been wanting in attentions to our asynchronous and streaming-
+                  inspired colleagues. We have appealed to the wonderful capabilities of
+                  Monix, and we have faithfully conjured them by the integrations of our JDBC
+                  and Cassandra modules.
+                </li>
+              </ul>
+              <p><b>
+                We therefore, the developers, and users of the Quill Language Integrated
+                Framework, humbly extend our welcome to all newcomers who would like to
+                participate in our Gitter channel, our Issues lists, and our sacred Pull
+                Requests!
+              </b></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="talks-block">
+          <h3 id="medium">Medium Talks (30 minutes)</h3>
+
+          <div class="talk">
+            <div class="talk-title">
+              portable-files: local and remote file IO, on the JVM and JS, for "src/"s and "test/"s
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                Java’s (N)IO interfaces are insoluble in idiomatic Scala, so
+                I wrote an alternative in portable Scala.
+              </p>
+              <p>
+                It reads local files, HTTP URLs, and cloud-store objects, bakes
+                in block-LRU-caching, captures effects with the tagless final
+                pattern, and more.
+              </p>
+              <p>
+                I’ll demo it and discuss designs and alternatives!
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m0" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m0-description" class="talk-descr" style="display: none">
+              <p>
+                Java NIO is a standard way to read and write remote files using familiar local-IO interfaces, but it leaves a lot of type-safety and ergonomics on the table: - various URI schemes are supported via brittle SPI classloader tricks - the API surface is large, and not applicable to many file stores; UnsupportedOperationExceptions ensue - excessive mutability is assumed, e.g. channels typically have both read and write capabilities, but only use one - etc.
+              </p>
+              <p>
+                After years of frustration, I made an attempt at a pure, portable, Scala NIO replacement. I use it in server- and web-apps, and it lets my portable libraries’ tests assert against “expected” values serialized to local files, removing an awkward asymmetry between JVM- and JS-based tests. It solves many points I had, that also seem close to but not covered by http4s or fs2.
+              </p>
+              <p>
+                I’ll show a range of prior art I studied and drew inspiration from
+                (buffering, caching, ahead-looking Java InputStreams, <code>fs</code>
+                and <code>request</code> Node libraries, etc.), and discuss the pros and cons of bringing heavy Scala abstractions (cats-effect!) to bear on the classic task of reading and writing files.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Building a Resilient, Typesafe, and Modelled ETL Framework in Scala
+            </div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              Come see how we’ve made use of Scala to build an ETL framework that
+              preserves many of the benefits of off-the-shelf platforms while
+              solving many of the problems - it is resilient, typesafe, testable,
+              modelled, abstracted over source and destination, and it’s easy to
+              build in new jobs!
+            </div>
+            <div class="full-descr-button">
+              <button id="m1" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m1-description" class="talk-descr" style="display: none">
+              ETL has a reputation of being untestable, disconnected
+              from the systems that produce and use the data, and
+              generally annoying and not fun to work on. Yet it is a
+              critical part of most companies’ infrastructure. If you
+              ask around for technologies to use for ETL, it is
+              unlikely someone will recommend Scala. But over the
+              last year, we’ve used some of Scala’s unique features
+              to build out an ETL framework that is resilient, testable,
+              type safe, and in the same domain model as the surrounding
+              applications, while also having many of the same features
+              as tools specialized for ETL such as abstracting over
+              source and destination and making it easy to add new
+              jobs. In this talk, I will present the overall framework
+              architecture and some example jobs while also highlighting
+              the key Scala features that made this possible (generics,
+              type classes, traits, futures, and of course extensive
+              use of flatMap).
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">Teaching Scala</div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                In this talk I explain what techniques I have found most effective
+                for teaching Scala. I hope it will be useful for leaders of all
+                sorts and anyone who wants to consider their own learning journey.
+              </p>
+              <p>
+                We all teach more than we think and doing it better results in more
+                learning and more fun!
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m2" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m2-description" class="talk-descr" style="display: none">
+              <p>
+                In this talk I explain what techniques, strategies, and models have
+                proven most effective for teaching Scala. I hope this talk will be
+                useful for senior developers who find themselves mentoring juniors,
+                people who want to get involved in community events such as
+                ScalaBridge, and anyone who wants to consider their own learning
+                journey.
+              </p>
+              <p>
+                This talk is focused on what I have found to be most effective for
+                teaching Scala. It includes recommendations in three categories. I
+                will explore teaching techniques, such as peer learning. I will
+                also describe suggestions specific to teaching programming, such
+                as the differences between experts and novices, notional machines,
+                and more. Finally I will share programming strategies and a suggested
+                curriculum specifically targeted to teaching Scala. Improved teaching
+                results in a better experience for all parties. That means more
+                learning and more fun!
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Compositional, Expressive, Performant Database Queries: Choose 3
+            </div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              ORMs are slow and frustrating and SQL queries are giant, type-unsafe
+              strings, incapable of modular reuse. Functional programming lets
+              you access your database without sacrificing composition (modularity
+              and reuse), expressivity (complex edge cases), and performance.
+            </div>
+            <div class="full-descr-button">
+              <button id="m3" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m3-description" class="talk-descr" style="display: none">
+              <p>
+                Many programmers who need database support either use an Object Relational
+                Mapper or give up and use SQL strings and manually parse result sets. Both
+                approaches have significant drawbacks for the developer and the business,
+                including poor reuse (monolithic, non-reusable query fragments), poor
+                composability, poor type safety, and poor testability.
+              </p>
+              <p>
+                In this talk, the author will present Slick, a Functional Relation Mapping
+                library for Scala. Slick allows you to express queries in an embedded,
+                type-checked, collections-like DSL, which is compiled at runtime into SQL
+                and executed on the underlying database.
+              </p>
+              <p>
+                The author will then show you techniques enabling you to implement database
+                queries in a generic, reusable, self-contained, modular fashion. This
+                enables application-level functionality to be implemented once, efficiently
+                and correctly, using functional programming techniques to provide reuse,
+                compositionality, type safety, and testability, all without sacrificing
+                high performance. Time permitting, we’ll briefly venture into the Category
+                Theory basis underlying the approach.
+              </p>
+              <p>
+                Discover how functional programming takes the real world challenges of
+                database access, helping programmers to be more productive, and making
+                business applications smaller, faster, easier to maintain, and less buggy.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">Exploring Scala Tooling Ecosystem</div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                Scala’s tooling experience has improved and now there’s an increasing
+                number of tools to choose from. We can feel the hype but might not be fully
+                aware of tools that exists, alternatives, trade offs or even recent efforts
+                such as LSP initiative. This talk’s goal is to create such tooling
+                awareness.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m4" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m4-description" class="talk-descr" style="display: none">
+              <p>
+                We are going to explore and compare some build tools with special focus on
+                LSP/BSP implementations, IDEs and text editor’s support. For the sake of
+                empower audience’s judgement about the tools that could suit better for
+                their particular needs this talk aims to get attendees familiar with terms
+                like SemanticDB, Metals, Bloop, SBT, Pants, Bazel, Ensime, IntelliJ IDE,
+                Scala IDE, Dotty IDE and other honorific mentions.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Free Boolean Algebras: Boolean Logic for Free!
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                You may have heard of Free Monads, but there are other “Free” structures.
+                Another useful type are Free Boolean Algebras, which give us Boolean logic
+                for a set of primitives “for free”. We’ll derive the Free Boolean Algebra
+                and show how you can use it in your programs.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">FS3: Evolving a Streaming Platform</div>
+            <div class="talk-level">Audience Level: Advanced</div>
+            <div class="talk-abstract">
+              <p>
+                FS3 is the code name for the next major version of FS2. In this talk, we’ll
+                look at how pull based streaming may be implemented in FS3 and how various
+                API decisions guide the design process. As a result, I hope a few will be
+                inspired to help make FS3 reality.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m5" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m5-description" class="talk-descr" style="display: none">
+              <p>
+                The Functional Streams for Scala (FS2) library provides core infrastructure
+                for many critical components of the open source Scala ecosystem, including
+                libraries like http4s and doobie. In this talk, we’ll look at a possible
+                future direction for FS2 (code named FS3), focused on replacing the
+                internal pseudo-Free interpreter with a more direct encoding. We’ll also
+                look at how various API decisions constrain the solution space. Attendees
+                will leave with a better understanding of the FS2 API and hopefully, a few
+                will be inspired to help work on FS3.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Functions and Data: The Essence of Functional Programming
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                I’m going to show a way to write programs that are easy to understand,
+                test, refactor and change, using only pure functions and immutable data
+                types.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m6" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m6-description" class="talk-descr" style="display: none">
+              <p>
+                In the beginning, there were only functions and data. Maybe it’s enough?
+                We’ll look at the advantages of pure functions and immutable data. Then,
+                we’ll go for an adventure of programming with only that, and see whether
+                we’re missing anything. Hopefully, we’ll see that it’s entirely possible
+                and reasonable to write programs that are: - just as useful as the ones
+                written with mutability, runtime reflection, dependency injection
+                frameworks, side effects and exceptions - much easier to test, parallelize,
+                refactor and change than otherwise by only using pure functions and
+                immutable data types.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Improving Your FP with Visualizations
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                As a functional programming teacher and mentor, I’ve experimented in many
+                ways to visualize types and their signatures to help my students and peers
+                learn new concepts like functors or monads. In this talk I’ll share the
+                techniques that have helped the most, so you try them out yourselves.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m7" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m7-description" class="talk-descr" style="display: none">
+              <p>
+                Good examples are essential for effective teaching, but what techniques can
+                we use to bridge between concrete examples and the (perhaps hidden)
+                abstractions? And how can we teach the manipulation of abstractions at
+                higher levels? Often these ideas can be expressed in the language of types.
+              </p>
+              <p>
+                As a functional programming teacher and mentor, I’ve experimented in many
+                ways to visualize types and their signatures to help my students and peers
+                learn new concepts like functors or monads. In this talk I’ll share the
+                techniques that have helped the most, so you try them out yourselves.
+              </p>
+              <ul>
+                <li>Learn how to read type signatures</li>
+                <li>Learn how to visualize the “flow” of types in expressions and evaluations</li>
+                <li>See how type visualization can help to compare and contrast various
+                  abstractions</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Using FreeBooleanAlgebras in the Real World
+            </div>
+            <div class="talk-level">Audience Level: Advanced</div>
+            <div class="talk-abstract">
+              <p>
+                This talk will introduce a new free structure, the free boolean algebra,
+                and show you how this is super useful in production, too. What’s not to
+                love?
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m8" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m8-description" class="talk-descr" style="display: none">
+              <p>
+                Free Structures are pretty awesome, but besides Free Monads and maybe Free
+                Applicatives, other Free structures are mostly unknown. This talk will
+                introduce an overlooked Free structure, the Free Boolean Algebra and use it
+                to solve a real world day-to-day problem in a super elegant and awesome
+                way.
+              </p>
+              <p>
+                The FreeBooleanAlgebra is the perfect framework for a predicate-powered DSL
+                and we will see some of the following key aspects: - the DSL we get - ways
+                to enrich your DSL with more operations - flexible interpretation - partial
+                evaluation - serialization - …
+              </p>
+              <p>
+                If you don’t think you would ever using any fancy free monad stuff in your
+                day-to-day job, this talk is perfect for you!
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="talks-block">
+          <h3 id="lightning">Lightning Talks (15 minutes)</h3>
+
+          <div class="talk">
+            <div class="talk-title">Adopting GraalVM</div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              After years of development, Oracle published GraalVM and sparkled
+              a lot of interest. GraalVM is a high-performance polyglot VM with
+              a number of interesting traits we can take advantage of. I’d like
+              to discuss the advantages and disadvantages of adopting GraalVM
+              also share our story in this area.
+            </div>
+            <div class="full-descr-button">
+              <button id="l1" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l1-description" class="talk-descr" style="display: none">
+              After many years of development, Oracle finally published GraalVM
+              and sparkled a lot of interest in the community. GraalVM is a
+              high-performance polyglot VM with a number of potentially interesting
+              traits we can take advantage of like increased performance and
+              lowered cost. It can also tackle shortcomings of JVM/Scala we are
+              struggling for years like slow-startup times or large jars. Lastly,
+              thanks to its polyglot nature it can open interesting doors we may
+              want to discover. On the other hand, GraalVM may still be bleeding
+              edge technology and having a hard time to deliver the promised
+              features. In this talk, I’d like to discuss advantages and disadvantages
+              of adopting GraalVM, provide you guidance if you decide to do so
+              and also share our story in this area including various samples,
+              and recommendations. This talk is focused on JVM and Scala but
+              should be beneficial for everyone with interested in this topic.
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Apache Spark Structured Streaming: The Easy Path to Data Lake
+            </div>
+            <div class="talk-level">Audience Level: Beginner</div>
+            <div class="talk-abstract">
+              This speech shows you how to organize simple Data Lake with Apache
+              Spark structured streaming if you need to do it fast and flexible.
+              This solution will be near-production ready, and your data science
+              team will be happy because they can start checking their hypotheses
+              and share feedback with you.
+            </div>
+            <div class="full-descr-button">
+              <button id="l2" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l2-description" class="talk-descr" style="display: none">
+              These speech is about how to organize simple Data Lake with Apache
+              Spark structured streaming and Apache Kafka. I will describe Spark
+              Structured Streaming and its major differences from Spark Streaming
+              . How to implement your spark application in case when your
+              team/business/pm does not know what exactly data fields they need,
+              but PoC is needed urgently, and data science team want to query
+              this data via Apache Hive(or some other way) to check their hypotheses.
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">Build a micro-services API in 15 minutes</div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              This talk introduces Mu, a new FP library for building micro-services APIs.
+              Mu offers code annotations for defining RPC or REST APIs, message
+              types, and serialization formats, thus removing the dependency on
+              protocol-specific declarations and enabling seamless changes between
+              different implementations.
+            </div>
+            <div class="full-descr-button">
+              <button id="l3" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l3-description" class="talk-descr" style="display: none">
+              In just 15 minutes, you’ll learn how to use Mu, a new FP library
+              for building microservices, to help reduce pain points while
+              developing APIs. Learn to model your service APIs using Tagless
+              Final algebras without worrying about protocol-specific details or
+              serialization formats. Mu will minimize your struggle!
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Empowering Soft Skills with Team Dynamics & Communication Skills
+              (For Software Engineering Team Projects & Customer Service): Using
+              Active listening Techniques
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              Key Takeaways:
+              <ul>
+                <li>Creative Problem Solving </li>
+                <li>Customer Service & Support</li>
+                <li>Generational Gaps & Workplace Diversity</li>
+                <li>Goal Setting</li>
+                <li>Leadership and Influence</li>
+                <li>Employee Efficiency</li>
+                <li>Using Group Dynamics</li>
+                <li>The loss of translation in a text/email</li>
+                <li>The value of how things are said</li>
+                <li>How someone hears a word</li>
+              </ul>
+            </div>
+            <div class="full-descr-button">
+              <button id="l4" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l4-description" class="talk-descr" style="display: none">
+              <p>
+                This program is ideal for individuals who work in a group setting and who
+                have Teams working in the areas of Engineering, Programming, and DevOps.
+              </p>
+              <ul>
+                <li>
+                  This concept has proven SOUND and EFFICIENT in regards to producing
+                  advanced degrees of SUCCESS in the areas of administration performance and
+                  TEAM-ROLE awareness.
+                </li>
+                <li>
+                  This lecture is designed to enhance the characteristics of a PHP team and
+                  allow them to be cross-efficient and well-informed of frameworks and
+                  sufficient-enough to the sense where they can offer all essential
+                  skillsets.
+                </li>
+                <li>
+                  My approach derives from my experience as an adjunct professor (psychology
+                  & group dynamics) and experience as an interrogator/profiler and hostage
+                  negotiator. My proficiency with said skills has allowed me to assemble a
+                  METHOD, which will INTEGRATE your TEAM sectors.
+                </li>
+                <li>
+                  The lecture/ is aimed at offering Development teams’ novel methods for
+                  applying agendas for the publication of a new variety of team projects.
+                </li>
+                <li>
+                  My RESEARCH and practice will assist companies, organizations, and groups
+                  by merging psychology in consort with Active Listening Skills (ALS), which
+                  will result in an ACCELERATED-advance technique, devised to build rapport
+                  as well as enhanced recruiting methods.
+                </li>
+                <li>
+                  The lecture/ is designed to bring out individuals exceptional
+                  communication and administrative abilities and skills to function
+                  efficiently as an element of a team.
+                </li>
+                <li>
+                  This presentation will allow businesses to use the TEAM PROJECT MODEL to
+                  help their team members cooperate, with the focus on utilizing distinctive
+                  intensities within individual elements among members of a team.
+                </li>
+                <li>
+                  Team leaders will take with them newer methods to develop a team of
+                  energetic, driven individuals who are enthusiastic regarding assisting the
+                  corporate endure to climb to new elevations.
+                </li>
+                <li>
+                  This presentation also motivates an even more distanced method of diverse
+                  aspects regarding a project.
+                </li>
+                <li>
+                  My presentation will illustrate that the above model is acceptable.
+                  However, a team will not communicate effectively if a team that has been
+                  taken apart and separated due to disconnection and lack of communication.
+                </li>
+                <li>
+                  By using ACTIVE LISTENING SKILLS (ALS), a method developed by the FBI,
+                  every team member will increase productivity regarding their specific
+                  missions, and when united, the team members will form successful
+                  finalization of their team-goal. By applying ALS, the team’s entire task
+                  will be the result of collective productive representation of their work.
+                </li>
+                <li>
+                  As with all teams, each team was placed together because at the initial
+                  conception of the group; it was assumed that the team element is within the
+                  excellent working order. However, the appreciation of the team model must
+                  be well-oiled, and if not, members of the team will individually lack the
+                  proper function that is necessitated for TEAMWORK and fail to produce.
+                </li>
+              </ul>
+              <p>
+                RESEARCH HAS PROVEN THAT THE KEY CATALYST REGARDING TEAM FAILURE IS
+                COMMUNICATION AND THE LACK OF PROPER USAGE OF ONE’S COMMUNICATION SKILLS.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Free Monoids: Monoids for Anything!
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                <i>"Can you make a <code>Monoid[A]</code> for any <code>A</code>?"</i>
+                It seems impossible, but you can do it if you cheat.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              Generic Programming in Scala - all that we must know!
+            </div>
+            <div class="talk-level">Audience Level: Advanced</div>
+            <div class="talk-abstract">
+              <p>
+                The talk is on Generic Programming in Scala, starting from basics, to
+                shapeless, and all the way to concepts in scalaz-deriving. We will showcase
+                an algorithm built to compute state of cloud infrastructure, and explain
+                how important it is to know these concepts to make robust solutions.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="l5" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l5-description" class="talk-descr" style="display: none">
+              <p>
+                Generic Programming in Scala has always been an interesting topic. Dozens
+                of libraries that we use in scala is based on the concepts that we will be
+                covering in this talk.
+              </p>
+              <p>
+                Recently, we have had a chance to write a web application that tries to
+                deploy a multi-tenanted infrastructure in cloud. We will share the success
+                story of how quick and easy was it to implement the same with the backing
+                of Generic Programming and FP concepts, and thereby produce an application
+                that was bang on in the production environment with seriously no bugs. In
+                short, we have got a resource differencing algorithm written in scala using
+                automatic type class derivation. The application then performs a fast and
+                robust refresh of resources in the cloud based on the declarative HOCCON
+                based DSL written by the user.
+              </p>
+              <p>
+                I will cover the concepts in shapeless, share the logic of resource
+                differencing algorithm, discuss the must-know concepts of scalaz-deriving
+                and in fact discuss about how can we do this with macros in Scala directly.
+                I will not forget to mention about Generic Programming coming up in Scala 3
+                while discussing about the pros and cons of all these approaches.
+              </p>
+              <p>
+                The talk is intended to motivate the FP lovers to look much more deeper
+                into the power of Scala, and enable developers to easily uncover the
+                possibility of building much more robust libraries for their clients.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">
+              ONNX-Scala: An ONNX (Open Neural Network eXchange) API and Code
+              Generator for Typeful, Numerically Generic, Functional Deep
+              Learning in Scala
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                Overwhelmed by deciding between many deep learning libraries? Want to train
+                in one context and inference in another? Open Standards! Finding Python
+                solutions lacking in type safety & support for higher-level/pure functional
+                programming constructs? Functional, typeful Scala! Meet ONNX-Scala.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="l6" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l6-description" class="talk-descr" style="display: none">
+              <p>
+                An ONNX (Open Neural Network Exchange) API and Code Generator for Typeful,
+                Numerically Generic, Functional Deep Learning in Scala
+              </p>
+              <p>
+                This project currently provides:
+              </p>
+              <p>
+                A) a complete, versioned, numerically generic, type-safe / typeful API to
+                ONNX(Open Neural Network eXchange, an open format to represent deep
+                learning and classical machine learning models), derived from the Protobuf
+                definitions and the operator schemas (defined in C++) via the JavaCPP
+                Preset for ONNX.
+              </p>
+              <p>
+                This API is expressed via traits, with version-named methods.
+              </p>
+              <p>
+                B) a program generator, capable of translating ONNX model Protobuf (.onnx)
+                files into Scala programs written in terms of this API.
+              <p>
+                ONNX-Scala will also be home to:
+              </p>
+              <p>
+                C) at least one, eventually many backend implementations of ONNX accessible
+                from the JVM.
+              </p>
+              <p>
+                Currently there is a rough sketch of an
+                <a target="_blank" href="https://github.com/NervanaSystems/ngraph">
+                  nGraph
+                </a>
+                backend, which is capable of
+                running a single ReLU node network, based on the new nGraph JavaCPP Preset.
+              </p>
+              <p>
+                All together, these should enable model inspection and modification, extra
+                compile-time assurances, mixing/matching of backend operator
+                implementations and integration into JVM-based production systems, for a
+                start.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk">
+            <div class="talk-title">Type class survival guide</div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              <p>
+                Monad, Monoid, Functor, Semigroup. What’s the difference!? Become a type
+                class master with these handy visual aids! Learn their powers and the
+                relationships between them. Gotta catch ‘em all!
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="l7" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l7-description" class="talk-descr" style="display: none">
+              <p>
+                Learning the type classes from Cats and Scalaz can be difficult without a
+                guide. By presenting the most well-known type classes visually, we can more
+                easily understand their capabilities and the relationship between them.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container align-center">
+      <p>
+        Made possible with <i class="fa fa-heart"></i> from the,
+        <a target="_blank" href="https://scala-phase.org">Philadelphia</a>,
+        <a target="_blank" href="http://www.meetup.com/ny-scala/">New York</a>,
+        and <a target="_blank" href="http://www.meetup.com/boston-scala/">Boston</a>
+        Scala Enthusiasts.
+      </p>
+      <ul class="copyright">
+        <li>
+          <a href="2018/">2018</a>
+        </li>
+        <li>
+          <a href="2017/">2017</a>
+        </li>
+        <li>
+          <a href="2016/">2016</a>
+        </li>
+        <li>
+          <a href="2015/">2015</a>
+        </li>
+        <li>
+          <a href="2014/">2014</a>
+        </li>
+        <li>
+          <a href="2013/">2013</a>
+        </li>
+        <li>
+          <a href="2012/">2012</a>
+        </li>
+        <li>
+          <a href="2011/">2011</a>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>
+          Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".descr-button").click(function(e) {
+      var buttonID = $(this).attr("id");
+      $("#" + buttonID + "-description").toggle()
+    });
+  });
+</script>
+
+</body>
+</html>
