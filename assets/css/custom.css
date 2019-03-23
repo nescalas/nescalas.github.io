@@ -85,6 +85,28 @@ a.company-logo img {
   padding: 2em 0 2em 0 !important;
 }
 
+#schedule table {
+  margin-top: 20px;
+}
+
+#schedule table td {
+  text-align: left
+}
+
+#schedule table td.time {
+}
+
+#schedule table td.duration {
+}
+
+#schedule table td.speaker {
+  font-weight: bold;
+}
+
+#schedule table td.title {
+  font-style: italic;
+}
+
 section > .container ol {
   margin-bottom: 20px;
 }
