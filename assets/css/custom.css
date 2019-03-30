@@ -199,6 +199,20 @@ div.full-descr-button {
   font-style: italic;
 }
 
+section code {
+  font-size: smaller;
+  background-color: white;
+  color: black;
+  padding: 0;
+}
+
+pre {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .talk pre {
   font-size: smaller;
   margin-left: 1em;
