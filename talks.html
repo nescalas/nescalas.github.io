@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+  <title>NEScala 2019: Accepted Talks</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@nescalas">
+  <meta name="twitter:title" content="nescala 2019">
+  <meta name="twitter:description"
+        content="Your friendly neighborhood Scala conference, chugging through the Northeast since 2011.">
+  <meta name="twitter:image" content="/images/nescalas-logo.png">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/custom.css"/>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+</head>
+<body class="is-preload">
+
+<!-- Header -->
+<section id="header">
+  <header>
+    <span class="image avatar"><img src="images/nescalas-logo.png" alt=""/></span>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#long">Long Talks</a></li>
+      <li><a href="#medium">Medium Talks</a></li>
+      <li><a href="#lightning">Lightning Talks</a></li>
+    </ul>
+  </nav>
+  <footer>
+    <ul class="icons">
+      <li>
+        <a target="_blank" href="https://twitter.com/nescalas" class="icon fa-twitter"><span class="label">Twitter</span></a>
+      </li>
+    </ul>
+  </footer>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Main -->
+  <div id="main">
+
+    <section id="proposed-talks">
+      <div class="image main" data-position="center">
+        <img src="images/philly-boathouse-row.jpg" alt=""/>
+      </div>
+      <div class="container">
+        <header class="major">
+          <!--
+            Note that id="logo" defines the logo that shows up at the very top in
+            the mobile layout. See js/main.js. If not set, "undefined" will show
+            up. We want it to be empty.
+          -->
+          <span id="logo"></span>
+          <h2>
+            Northeast Scala Symposium <span style="color: #777">2019</span><br/>
+            Accepted Talks
+          </h2>
+        </header>
+
+        <div class="talks-block">
+          <h3 id="long">Long Talks (45 minutes)</h3>
+
+          <div class="talk" id="rubiks">
+            <div>
+              Stewart Stewart:
+              <span class="talk-title">Solving a Rubik's Cube with Group Theory in Scala</span>
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>Have you solved a Rubik’s Cube Yet?</p>
+              <p>
+                In five minutes, I’ll teach everything you need to know to solve
+                it. Really! Then, with the easy stuff out of the way, we’ll dive
+                into the math behind the solution, teach it to a computer, and
+                demonstrate the result with a live solve on a Bluetooth Rubik’s
+                Cube.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="f1" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f1-description" class="talk-descr" style="display: none">
+              <p>
+                The Rubik’s Cube is a famous puzzle that’s notorious for being
+                difficult to solve. In this talk, we’ll show how math can be used
+                to simplify the problem to the point that a human can solve it
+                intuitively or write a clear and concise program do so.
+              </p>
+              <p>
+                We’ll begin by covering some basic Group Theory concepts, and
+                demonstrate how these can be used to model a Rubik’s Cube in a
+                simple way that lends itself well to analysis. Examples will be
+                demonstrated using a Bluetooth enabled Rubik’s Cube that allows for
+                automatic analysis on the big screen while preserving speed and
+                flexibility. Next, we’ll code up a solution that directly takes
+                advantage of this mathematical structure. For this we’ll leverage
+                an existing scala library for computational group theory. Finally,
+                we’ll test this program with a live solve on our Bluetooth Rubik’s
+                Cube, so we can analyze the produced solution in a step-by-step
+                fashion.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk" id="fury">
+            <div>Jon Pretty: <span class="talk-title">Fire and Fury</span></div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              Fury is an exciting new build tool and dependency manager for Scala
+              with bold aspirations to revolutionize the way we define and
+              distribute source builds. You will learn Fury’s radical—but
+              simple—model, see its fast and beautiful UI, and start to believe
+              how Fury can be the future of building Scala!
+            </div>
+            <div class="full-descr-button">
+              <button id="f0" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="f0-description" class="talk-descr" style="display: none">
+              <p>
+                I started work on Fury on my flight home from NE Scala 2018, so
+                this year’s symposium marks an important anniversary for Fury, as
+                it approaches a first release.
+              </p>
+              <p>
+                Fury is a radical new build tool for developing software written
+                in Scala and other JVM languages. It starts with a completely blank
+                canvas and not only takes on the challenges of developing maintainable
+                and composable build definitions, but has bold aspirations to shake
+                up the way we publish and distribute software, too: Fury aims to
+                make binary compatibility issues a thing of the past.
+              </p>
+              <p>
+                This talk will be a rapid, but practical demonstration of using
+                Fury. You will learn how easy it is to create builds for existing
+                Scala projects and for new ones. You will discover how fast, intuitive
+                and responsive Fury’s user interface is, and will get to see Fury’s
+                out-of-the-box support for common (but traditionally difficult)
+                build tasks like code generation, benchmarking and publishing.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk" id="http4s-chat-server">
+            <div>
+              Martin Snyder
+              <span class="talk-title">A Websocket-based Chat Server in http4s</span>
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>Have you solved a Rubik’s Cube Yet?</p>
+              <p>
+                An impromptu walk through of the source code for
+                <a href="https://github.com/MartinSnyder/http4s-chatserver" target="_blank">
+                  <i>http4s-chatserver</i>
+                </a>.
+                <i>http4s-chatserver</i> is an example project for
+                <a href="https://http4s.org/" target="_blank">http4s</a>
+                that demonstrates how to combine multiple WebSockets, functional
+                streams, and application state to build a compact, but
+                non-trivial application.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="talks-block">
+          <h3 id="medium">Medium Talks (30 minutes)</h3>
+
+          <div class="talk" id="scala-etl">
+            <div>
+              Max Epelbaum:
+              <span class="talk-title">
+                Building a Resilient, Typesafe, and Modelled ETL Framework in Scala
+              </span>
+            </div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              Come see how we’ve made use of Scala to build an ETL framework that
+              preserves many of the benefits of off-the-shelf platforms while
+              solving many of the problems - it is resilient, typesafe, testable,
+              modelled, abstracted over source and destination, and it’s easy to
+              build in new jobs!
+            </div>
+            <div class="full-descr-button">
+              <button id="m1" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m1-description" class="talk-descr" style="display: none">
+              ETL has a reputation of being untestable, disconnected
+              from the systems that produce and use the data, and
+              generally annoying and not fun to work on. Yet it is a
+              critical part of most companies’ infrastructure. If you
+              ask around for technologies to use for ETL, it is
+              unlikely someone will recommend Scala. But over the
+              last year, we’ve used some of Scala’s unique features
+              to build out an ETL framework that is resilient, testable,
+              type safe, and in the same domain model as the surrounding
+              applications, while also having many of the same features
+              as tools specialized for ETL such as abstracting over
+              source and destination and making it easy to add new
+              jobs. In this talk, I will present the overall framework
+              architecture and some example jobs while also highlighting
+              the key Scala features that made this possible (generics,
+              type classes, traits, futures, and of course extensive
+              use of flatMap).
+            </div>
+          </div>
+
+          <div class="talk" id="tooling">
+            <div>
+              Jeferson David Ossa:
+              <span class="talk-title">Exploring the Scala Tooling Ecosystem</span>
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                Scala’s tooling experience has improved and now there’s an increasing
+                number of tools to choose from. We can feel the hype but might not be fully
+                aware of tools that exists, alternatives, trade offs or even recent efforts
+                such as LSP initiative. This talk’s goal is to create such tooling
+                awareness.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m4" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m4-description" class="talk-descr" style="display: none">
+              <p>
+                We are going to explore and compare some build tools with special focus on
+                LSP/BSP implementations, IDEs and text editor’s support. For the sake of
+                empower audience’s judgement about the tools that could suit better for
+                their particular needs this talk aims to get attendees familiar with terms
+                like SemanticDB, Metals, Bloop, SBT, Pants, Bazel, Ensime, IntelliJ IDE,
+                Scala IDE, Dotty IDE and other honorific mentions.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk" id="free-boolean-algebra">
+            <div>
+              Adam Rosien:
+              <span class="talk-title">
+                Free Boolean Algebras: Boolean Logic for Free!
+              </span>
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              <p>
+                You may have heard of Free Monads, but there are other “Free” structures.
+                Another useful type are Free Boolean Algebras, which give us Boolean logic
+                for a set of primitives “for free”. We’ll derive the Free Boolean Algebra
+                and show how you can use it in your programs.
+              </p>
+            </div>
+          </div>
+
+          <div class="talk" id="fs3">
+            <div>
+              Michael Pilquist:
+              <span class="talk-title">FS3: Evolving a Streaming Platform</span>
+            </div>
+            <div class="talk-level">Audience Level: Advanced</div>
+            <div class="talk-abstract">
+              <p>
+                FS3 is the code name for the next major version of FS2. In this talk, we’ll
+                look at how pull based streaming may be implemented in FS3 and how various
+                API decisions guide the design process. As a result, I hope a few will be
+                inspired to help make FS3 reality.
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="m5" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="m5-description" class="talk-descr" style="display: none">
+              <p>
+                The Functional Streams for Scala (FS2) library provides core infrastructure
+                for many critical components of the open source Scala ecosystem, including
+                libraries like http4s and doobie. In this talk, we’ll look at a possible
+                future direction for FS2 (code named FS3), focused on replacing the
+                internal pseudo-Free interpreter with a more direct encoding. We’ll also
+                look at how various API decisions constrain the solution space. Attendees
+                will leave with a better understanding of the FS2 API and hopefully, a few
+                will be inspired to help work on FS3.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="talks-block">
+          <h3 id="lightning">Lightning Talks (15 minutes)</h3>
+
+          <div class="talk" id="graal">
+            <div>
+              Petr Zapletal
+              <span class="talk-title">Adopting GraalVM</span>
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              After years of development, Oracle published GraalVM and sparkled
+              a lot of interest. GraalVM is a high-performance polyglot VM with
+              a number of interesting traits we can take advantage of. I’d like
+              to discuss the advantages and disadvantages of adopting GraalVM
+              also share our story in this area.
+            </div>
+            <div class="full-descr-button">
+              <button id="l1" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l1-description" class="talk-descr" style="display: none">
+              After many years of development, Oracle finally published GraalVM
+              and sparkled a lot of interest in the community. GraalVM is a
+              high-performance polyglot VM with a number of potentially interesting
+              traits we can take advantage of like increased performance and
+              lowered cost. It can also tackle shortcomings of JVM/Scala we are
+              struggling for years like slow-startup times or large jars. Lastly,
+              thanks to its polyglot nature it can open interesting doors we may
+              want to discover. On the other hand, GraalVM may still be bleeding
+              edge technology and having a hard time to deliver the promised
+              features. In this talk, I’d like to discuss advantages and disadvantages
+              of adopting GraalVM, provide you guidance if you decide to do so
+              and also share our story in this area including various samples,
+              and recommendations. This talk is focused on JVM and Scala but
+              should be beneficial for everyone with interested in this topic.
+            </div>
+          </div>
+
+          <div class="talk" id="spark-streaming">
+            <div>
+              Dmitry Lakhvich:
+              <span class="talk-title">
+                Apache Spark Structured Streaming: The Easy Path to Data Lake
+              </span>
+            </div>
+            <div class="talk-level">Audience Level: Beginner</div>
+            <div class="talk-abstract">
+              This speech shows you how to organize simple Data Lake with Apache
+              Spark structured streaming if you need to do it fast and flexible.
+              This solution will be near-production ready, and your data science
+              team will be happy because they can start checking their hypotheses
+              and share feedback with you.
+            </div>
+            <div class="full-descr-button">
+              <button id="l2" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l2-description" class="talk-descr" style="display: none">
+              These speech is about how to organize simple Data Lake with Apache
+              Spark structured streaming and Apache Kafka. I will describe Spark
+              Structured Streaming and its major differences from Spark Streaming
+              . How to implement your spark application in case when your
+              team/business/pm does not know what exactly data fields they need,
+              but PoC is needed urgently, and data science team want to query
+              this data via Apache Hive(or some other way) to check their hypotheses.
+            </div>
+          </div>
+
+          <div class="talk" id="microservices">
+            <div>
+              Oli Makhasoeva:
+              <span class="talk-title">
+                Build a micro-services API in 15 minutes
+              </span>
+            </div>
+            <div class="talk-level">Audience Level: All</div>
+            <div class="talk-abstract">
+              This talk introduces Mu, a new FP library for building micro-services APIs.
+              Mu offers code annotations for defining RPC or REST APIs, message
+              types, and serialization formats, thus removing the dependency on
+              protocol-specific declarations and enabling seamless changes between
+              different implementations.
+            </div>
+            <div class="full-descr-button">
+              <button id="l3" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l3-description" class="talk-descr" style="display: none">
+              In just 15 minutes, you’ll learn how to use Mu, a new FP library
+              for building microservices, to help reduce pain points while
+              developing APIs. Learn to model your service APIs using Tagless
+              Final algebras without worrying about protocol-specific details or
+              serialization formats. Mu will minimize your struggle!
+            </div>
+          </div>
+
+          <div class="talk" id="type-class-survival">
+            <div>
+              Mark Canlas:
+              <span class="talk-title">Type class survival guide</span>
+            </div>
+            <div class="talk-level">Audience Level: Intermediate</div>
+            <div class="talk-abstract">
+              <p>
+                Monad, Monoid, Functor, Semigroup. What’s the difference!? Become a type
+                class master with these handy visual aids! Learn their powers and the
+                relationships between them. Gotta catch ‘em all!
+              </p>
+            </div>
+            <div class="full-descr-button">
+              <button id="l7" class="btn descr-button">Toggle Full Description</button>
+            </div>
+            <div id="l7-description" class="talk-descr" style="display: none">
+              <p>
+                Learning the type classes from Cats and Scalaz can be difficult without a
+                guide. By presenting the most well-known type classes visually, we can more
+                easily understand their capabilities and the relationship between them.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container align-center">
+      <p>
+        Made possible with <i class="fa fa-heart"></i> from the,
+        <a target="_blank" href="https://scala-phase.org">Philadelphia</a>,
+        <a target="_blank" href="http://www.meetup.com/ny-scala/">New York</a>,
+        and <a target="_blank" href="http://www.meetup.com/boston-scala/">Boston</a>
+        Scala Enthusiasts.
+      </p>
+      <ul class="copyright">
+        <li>
+          <a href="2018/">2018</a>
+        </li>
+        <li>
+          <a href="2017/">2017</a>
+        </li>
+        <li>
+          <a href="2016/">2016</a>
+        </li>
+        <li>
+          <a href="2015/">2015</a>
+        </li>
+        <li>
+          <a href="2014/">2014</a>
+        </li>
+        <li>
+          <a href="2013/">2013</a>
+        </li>
+        <li>
+          <a href="2012/">2012</a>
+        </li>
+        <li>
+          <a href="2011/">2011</a>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>
+          Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".descr-button").click(function(e) {
+      var buttonID = $(this).attr("id");
+      $("#" + buttonID + "-description").toggle()
+    });
+  });
+</script>
+
+</body>
+</html>
