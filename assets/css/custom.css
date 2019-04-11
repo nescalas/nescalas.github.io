@@ -103,6 +103,14 @@ a.company-logo img {
   font-weight: bold;
 }
 
+#schedule table td.speaker .links {
+  font-weight: normal;
+}
+
+#schedule table td.speaker .links .video {
+  margin-right: 0.5em;
+}
+
 #schedule table td.title {
   font-style: italic;
 }
