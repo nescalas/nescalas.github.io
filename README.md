@@ -1,3 +1,6 @@
-# Source code to nescala.io
-#
-# Clone this, and aim your browser to the nescala.html file in the top-level directory.
+# nescalas.github.io
+Static website for NEScala (2020, and also years past)
+
+## Preview
+* clone this repo
+* aim your browser to [index.html](./index.html)
