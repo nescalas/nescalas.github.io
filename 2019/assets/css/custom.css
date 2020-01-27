@@ -1,0 +1,240 @@
+/*
+  Additional CSS, bmc@clapper.org
+
+  Allows original theme-supplied CSS to remain intact.
+*/
+
+body {
+  line-height: 1.5 !important;
+}
+
+img.nescala-logo {
+  width: 100px;
+}
+
+img.media-partner-logo {
+  width: 200px;
+}
+
+a.company-logo:hover, a.company-logo:visited, a.company-logo:link, a.company-logo:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  text-align: left !important;
+}
+
+a.company-logo img {
+  border: none !important;
+}
+
+.announcement {
+  border: 1px solid black;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.announcement ul {
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1680px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 960px) {
+  img.nescala-logo {
+    width: 80px !important;
+  }
+
+  img.media-partner-logo {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  img.nescala-logo {
+    width: 70px !important;
+  }
+
+  img.media-partner-logo {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  img.nescala-logo {
+    width: 50px !important;
+  }
+
+  img.media-partner-logo {
+    width: 150px !important;
+  }
+}
+
+#header {
+  background: rgb(72, 0, 0) !important;
+}
+
+#header > nav ul li a.active {
+  background: #fff;
+  color: rgb(72, 0, 0) !important;
+}
+
+#main > section > .container {
+  padding: 2em 0 2em 0 !important;
+}
+
+#schedule table {
+  margin-top: 20px;
+}
+
+#schedule table td {
+  text-align: left
+}
+
+#schedule table td.time {
+}
+
+#schedule table td.duration {
+}
+
+#schedule table td.speaker {
+  font-weight: bold;
+}
+
+#schedule table td.speaker .links {
+  font-weight: normal;
+}
+
+#schedule table td.speaker .links .video {
+  margin-right: 0.5em;
+}
+
+#schedule table td.title {
+  font-style: italic;
+}
+
+section > .container ol {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 .75em 0 !important;
+}
+
+header.major h2 {
+  color: rgb(72, 0, 0) !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: rgb(72, 0, 0) !important;
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+  border-color: rgb(72, 0, 0) !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+  background-color: rgb(72, 0, 0) !important;
+  color: #ffffff !important;
+}
+
+ul.feature-icons li:before {
+  background: rgb(72, 0, 0) !important;
+}
+
+#titleBar .toggle:before {
+  background: rgb(72, 0, 0) !important;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+  color: rgb(160, 0, 0) !important;
+}
+
+#proposed-talks h3 {
+  margin-top: 20px;
+}
+
+#proposed-talks .talk {
+  margin-top: 20px;
+}
+
+#proposed-talks .talk-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#proposed-talks .talk-abstract {
+  margin-left: 3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#proposed-talks .talk-descr {
+  margin-left: 3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.full-descr-button {
+  margin-left: 3em;
+}
+
+#proposed-talks .talks-block ul {
+  margin-bottom: 10px !important;
+}
+
+#proposed-talks .talks-block code {
+  color: rgb(156, 0, 0);
+  background-color: white;
+  margin: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+
+}
+
+.talk .talk-level {
+  font-style: italic;
+}
+
+section code {
+  font-size: smaller;
+  background-color: white;
+  color: black;
+  padding: 0;
+}
+
+pre {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.talk pre {
+  font-size: smaller;
+  margin-left: 1em;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+.btn {
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(72, 0, 0) !important;
+  color: white !important;
+  font-size: 15px !important;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
