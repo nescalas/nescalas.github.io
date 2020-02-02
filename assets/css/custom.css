@@ -12,6 +12,14 @@ img.nescala-logo {
   width: 100px;
 }
 
+img.inline {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.15em;
+  margin-right: 0.05em;
+}
+
 img.media-partner-logo {
   width: 200px;
 }
