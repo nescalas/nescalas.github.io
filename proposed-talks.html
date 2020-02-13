@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>NEScala 2019: Proposed Talks</title>
+    <title>NEScala 2020: Proposed Talks</title>
     <meta charset="utf-8"/>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@nescalas">
-    <meta name="twitter:title" content="nescala 2019">
+    <meta name="twitter:title" content="nescala 2020">
     <meta name="twitter:description"
         content="Your friendly neighborhood Scala conference, chugging through the Northeast since 2011.">
     <meta name="twitter:image" content="/images/nescalas-logo.png">
@@ -281,7 +281,7 @@
                     <button id="f13" class="btn descr-button">Toggle Full Description</button>
                   </div>
                   <div id="f13-description" class="talk-descr" style="display: none">
-                    <p>Abstract: 
+                    <p>Abstract:
 How do you know you can trust the accuracy of the data flowing through a pipeline, and the insights derived from it? At Spotify, we have an infrastructure team focused on data quality to address this problem. From the cultural changes we’re making to give data engineers a quality mindset, to the specific tools we’ve written, we’ll explain how we increase confidence and eliminate surprises in our data contents, and how we approach problems in the wide space of ‘data quality.’ You’ll learn about a few key moments in the pipeline lifecycle when data quality might be compromised, and the approach we took to improving them.</p>
                     <p>Some tools we’ll cover include:
 https://github.com/spotify/ratatool
@@ -498,8 +498,8 @@ In this talk we will describe the teaching and mentoring approach we took at Sca
                   <div class="talk-title">ONNX-Scala: An ONNX (Open Neural Network eXchange) API and Code Generator for Typeful, Numerically Generic, Functional Deep Learning in Scala </div>
                   <div class="talk-level">Audience Level: All</div>
                   <div class="talk-abstract">
-                    <p>Overwhelmed by deciding between many deep learning libraries? Want to train in one context and inference in another? Open Standards! 
-Finding Python solutions sorely lacking in type safety &amp; support for higher-level/pure functional programming constructs? Functional, typeful Scala! 
+                    <p>Overwhelmed by deciding between many deep learning libraries? Want to train in one context and inference in another? Open Standards!
+Finding Python solutions sorely lacking in type safety &amp; support for higher-level/pure functional programming constructs? Functional, typeful Scala!
 Meet ONNX-Scala.</p>
                   </div>
                   <div class="full-descr-button">
@@ -572,7 +572,7 @@ sbt "project programGeneratorJVM" "run absnet.onnx"
 import org.emergentorder.onnx.backends._</p>
                     <p>class Absnet(byteArray: Array[Byte]) {
   val Abs: org.emergentorder.onnx.Abs = new NGraphOperatorBackendFull()
-  def program(inputDatax: Tensor[Float]): List[Tensor[Float]]  = 
+  def program(inputDatax: Tensor[Float]): List[Tensor[Float]]  =
     for {
       nodex &lt;- List(inputDatax)
       nodey &lt;- List(Abs.Abs6(“y” ,X = Some(nodex)))
