@@ -20,6 +20,11 @@ img.inline {
   margin-right: 0.05em;
 }
 
+img.padded {
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+
 img.media-partner-logo {
   width: 200px;
 }
