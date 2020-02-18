@@ -208,21 +208,6 @@
                     <p>Distributed data and CAP theorem are complex but fundamental topics. They help with building efficient and scalable systems. There are a lot of moving parts in such systems and each part has its reason. This workshop will demonstrate two approaches: how to design consistent microservice using Sharding and how to make it available using CRDT. The installation has a Raspberry Pi Cluster with small displays attached to each node. It is a powerful visualization tool so you can easily learn different processes that happen under the hood in the Akka cluster. We will talk about the capabilities/restrictions of each approach and how it resonates with the CAP theorem.</p>
                   </div>
                 </div>
-                <div class="talk">
-                  <div class="talk-title">You Didn't Know It, but You Really Want to Learn Sequent Calculus</div>
-                  <div class="talk-level">Audience Level: All</div>
-                  <div class="talk-abstract">
-                    <p>For some reason, I decided I wanted to understand how the Curry-Howard isomorphism could be applied to actual software, and discovered that if I then understood sequent calculus(!), I could generate programs from their type. In this talk I’ll share this mathematical and programming journey with you.</p>
-                  </div>
-                  <div class="full-descr-button">
-                    <button id="f9" class="btn descr-button">Toggle Full Description</button>
-                  </div>
-                  <div id="f9-description" class="talk-descr" style="display: none">
-                    <p>For some reason, I decided I wanted to understand how the Curry-Howard isomorphism could be applied to actual software, and discovered that if I then understood sequent calculus(!), I could generate programs from their type. I’m grateful for another Scala project, <code>curryhoward</code>, for the initial inspiration, further references, and many ideas I could steal from.</p>
-                    <p>In this talk I’ll share this mathematical and programming journey with you. I built up the system using my go-to functional programming techniques (algebraic data types, typeclasses, reification, and more), so each step of the development can be understood individually and incrementally. I was pleasantly surprised when these strategies really worked! At the same time, the <code>cats</code> library gave me a solid functional foundation to build on, greatly speeding up my development, testing and debugging.</p>
-                    <p>You’ll learn about the core of our field, defined almost 100 years ago, how it pervades our programming tools, and see some code that brought some joy to a programmer doing something weird.</p>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="talks-block">
@@ -235,9 +220,9 @@
                     <p>Are you writing a library for your team? Are you encountering bugs or runtime errors that you suspect can be found earlier? Learn how to use the magic of implicits with phantom types to catch more bugs at compile time!</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f10" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f9" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f10-description" class="talk-descr" style="display: none">
+                  <div id="f9-description" class="talk-descr" style="display: none">
                     <p>One of the reasons why we chose Scala at Foursquare is for its expressive type system. We can use the type system to eliminate large classes of bugs at compile time. We have specifically used phantom types with implicit functions to create type safe builders for 3 separate use-cases: setting up API servers, constructing mongo queries, and defining translatable user-facing strings.</p>
                     <p>In this talk, you will learn what phantom types are and how you can combine them with implicits. You will learn how to employ them in increasingly complex ways, solving real-world examples along the way.</p>
                   </div>
@@ -249,9 +234,9 @@
                     <p>Services usually have data stores with various characteristics. A requirement emerging from distributed architectures is the need to capture data changes in primary stores. In this talk, I will discuss how to use Change Data Capture pattern to track these changes and share our experience with it.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f11" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f10" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f11-description" class="talk-descr" style="display: none">
+                  <div id="f10-description" class="talk-descr" style="display: none">
                     <p>Modern systems are usually designed as a collection of cooperating micro-services. These services commonly have their dedicated data stores for their individual needs. To support various requirements corresponding data are often stored in data stores with very different characteristics and use cases. A fundamental requirement emerging from these architectures is the need to reliably capture primary data changes. Change Data Capture (CDC) is a set of software design patterns used to determine and track the data that has changed so that action can be taken using the changed data. In this talk, I’d like to discuss the advantages and disadvantages of various CDC approaches, provide you guidance in this area and also share our experience (~ ESPN+ and Disney+) including various samples (~ scala + sbt), and recommendations.</p>
                   </div>
                 </div>
@@ -262,9 +247,9 @@
                     <p>Scala is a wonderful language for enterprise-scale software. But if you have a big group, with many shared libraries, those eviction warnings can go from being a minor annoyance to an existential threat. We will discuss binary compatibility, shading, and a new JSON library that came out of this.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f12" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f11" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f12-description" class="talk-descr" style="display: none">
+                  <div id="f11-description" class="talk-descr" style="display: none">
                     <p>Binary compatibility in Scala is complex, and it is very easy for an application to depend on multiple libraries whose transitive dependencies conflict: where library A and library B pull in different versions of lower-level library C.  This results in “eviction” of the older version, and a compiler warning that is all-too-often just ignored as a minor inconvenience.  Which seems fine – until your service crashes at runtime.</p>
                     <p>Rally Health has a large and mature Scala ecosystem, involving hundreds of different services and shared libraries, scattered across many hundreds of repos.  This means that those version incompatibilities can easily cause crises: changes that look completely innocuous at each level individually can cause production crashes when all the pieces are put together.</p>
                     <p>As a result, we’ve adopted a variety of third-party libraries, and developed some of our own, that together result in a rigorous discipline for automatically avoiding these problems.  We enforce “shading” – the use of different class paths for different versions of a library – so that multiple versions of a library can coexist in the same application at the same time without difficulty.</p>
@@ -278,9 +263,9 @@
                     <p>How do you know you can trust the accuracy of the data flowing through a pipeline, and the insights derived from it? At Spotify, we’ve made both cultural changes and Scala tools to increase confidence and eliminate surprises in our data contents, and solve problems in the wide space of data quality.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f13" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f12" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f13-description" class="talk-descr" style="display: none">
+                  <div id="f12-description" class="talk-descr" style="display: none">
                     <p>Abstract: 
 How do you know you can trust the accuracy of the data flowing through a pipeline, and the insights derived from it? At Spotify, we have an infrastructure team focused on data quality to address this problem. From the cultural changes we’re making to give data engineers a quality mindset, to the specific tools we’ve written, we’ll explain how we increase confidence and eliminate surprises in our data contents, and how we approach problems in the wide space of ‘data quality.’ You’ll learn about a few key moments in the pipeline lifecycle when data quality might be compromised, and the approach we took to improving them.</p>
                     <p>Some tools we’ll cover include:
@@ -298,9 +283,9 @@ https://github.com/typelevel/scalacheck</p>
 This talk aims to show how learning works, using prior OOP knowledge to learn Scala.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f14" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f13" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f14-description" class="talk-descr" style="display: none">
+                  <div id="f13-description" class="talk-descr" style="display: none">
                     <p>When it comes to teaching and learning Scala we start by looking for talks, books, posts, and mentors even before wandering how we learn and how our learning is affected by prior knowledge, motivation, and practice.</p>
                     <p>In this talk, we are going to explore the nature of the learning process and how we can use prior knowledge from OOP to teach FP using Scala; even for high-performant teams that cannot reduce their cadence in terms of business value delivered. Finally, we’ll extrapolate this knowledge to foresee a pedagogical approach to teach Scala 3 from Scala 2.</p>
                   </div>
@@ -313,9 +298,9 @@ This talk aims to show how learning works, using prior OOP knowledge to learn Sc
 Seemingly simple, but == has evolved throughout the history of Scala, and it’s underspecified in the language spec. This is part investigative journalism and, part activism because Scala 3.x is coming up and we have a once-in-a-lifetime opportunity to fix to ==.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f15" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f14" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f15-description" class="talk-descr" style="display: none">
+                  <div id="f14-description" class="talk-descr" style="display: none">
                     <p>In this talk, I am going to investigate how == works in Scala. Equality is a seemingly simple concept, but it’s a complicated topic, partly because it has evolved throughout the history of Scala. First we will understand how Scala 2.x equality works, covering topics such as cooperative equality. Next we will look to the future of Scala 3.x, and understand what it improves, and what can be made even better.</p>
                   </div>
                 </div>
@@ -326,9 +311,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>We’ll show how Magnolia based type class derivation can be applied to Hadoop-era Java API. We use Magnolia to derive Parquet read/write support for type-safe IO of Parquet files with Scala types. We’ll discuss the difference between macro &amp; magnolia-based approaches.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f16" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f15" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f16-description" class="talk-descr" style="display: none">
+                  <div id="f15-description" class="talk-descr" style="display: none">
                     <p>This is a follow up to the Macros in Data Pipelines talk at NEScala 2015 which presented a type-safe and user friendly API for Parquet Avro using Scala macros. Fast forward we will present a different approach of deriving type-safe Parquet read/write support using Magnolia. We’ll show how the unlikely combo of Magnolia type class derivation and Hadoop era Java can be used in harmony.</p>
                   </div>
                 </div>
@@ -340,9 +325,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>Also I’d like to discuss recent developments, how the new ideas are incubated, and talk about big ideas for the future.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f17" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f16" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f17-description" class="talk-descr" style="display: none">
+                  <div id="f16-description" class="talk-descr" style="display: none">
                     <p>In this talk, let’s look back at the history of build tools that influenced sbt, and the evolution of the sbt itself. Next, I’d like to discuss how new ideas are incubated, and what the future might hold for sbt.</p>
                   </div>
                 </div>
@@ -353,26 +338,10 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>The dreaded NullPointerException is something most Scala and Java programmers are familiar with. Making your code null safe is a difficult task as Scala’s type system doesn’t keep track of possibly null references. I developed a macro-based library to make making your code null safe fast and easy!</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f18" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f17" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f18-description" class="talk-descr" style="display: none">
+                  <div id="f17-description" class="talk-descr" style="display: none">
                     <p>In this talk we will explore the history of the infamous NullPointerException and it’s counterparts in other languages and we’ll discover the root cause of why they exist.  Then we will examine the current ways of dealing with this problem in Scala today and the shortcomings thereof.   Then I’ll introduce the new <a href="https://github.com/ryanstull/ScalaNullSafe">ScalaNullSafe</a> macros and I’ll show how they fix many of the issues present in the other solutions.   After that we’ll briefly dive into macro implementation and debugging, and then we’ll also briefly look at how this problem will be addressed in Scala 3.</p>
-                  </div>
-                </div>
-                <div class="talk">
-                  <div class="talk-title">Sleeping well in the lion's den with Monix Catnap</div>
-                  <div class="talk-level">Audience Level: Intermediate</div>
-                  <div class="talk-abstract">
-                    <p>Concurrency bugs leave you restless? Monix Catnap provides a ton of utilities that will let your worries take a good nap!</p>
-                    <p>If you’re curious how Local can help you with tracing, had to solve complex producer-consumer scenarios or you ever needed a high-performance Async Queue it’s a talk for you.</p>
-                  </div>
-                  <div class="full-descr-button">
-                    <button id="f19" class="btn descr-button">Toggle Full Description</button>
-                  </div>
-                  <div id="f19-description" class="talk-descr" style="display: none">
-                    <p>Concurrency bugs leave you restless? Monix Catnap provides a ton of utilities that will let your worries take a good nap!</p>
-                    <p>In this talk you will be introduced to Execution and Catnap modules. The former is a companion to scala.concurrent with lots of concurrency primitives, including semantically blocking Future-native equivalents of popular fiber-based concurrency primitives. The latter exposes purely functional utilities for Cats-Effect ecosystem. Both are used extensively in Monix internals.</p>
-                    <p>The talk will cover some of the most interesting ones and show how they could be of use in your projects.</p>
                   </div>
                 </div>
                 <div class="talk">
@@ -382,9 +351,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>Finite state machines are a great way to model web services, data validation, animations … just about anything! In this talk we will delve into the use and representation of finite state machines in Scala. We’ll see what they can do, and how easy they are to use.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f20" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f18" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f20-description" class="talk-descr" style="display: none">
+                  <div id="f18-description" class="talk-descr" style="display: none">
                     <p>Finite state machines are a core concept in Computer Science, but are less common outside the classroom. It’s time to change that! In this talk I’ll show how finite state machines can solve a wide range of practical programming problems, focusing on web services and data engineering, while also being really use to implement and use.</p>
                     <p>Finite state machines provide a model for computation that hits the sweet spot for a great number of practical tasks: simple enough to easily understand while being expressive enough to solve many problems. However it’s rare to see explicit finite state machines in the wild. The first goal of this talk is to convince you to use finite state machines as a tool to model the problems you’re working on, by showing you how they can express tasks such as data validation, web services, and animations.</p>
                     <p>The second goal is to show you how easy it is to use finite state machines. This is partly because the basic model is very simple (we can define it in one line!) but also because finite state machines have a structure that allows for a lot of composition. So we’ll look at monoids, monads, and all our other favourite FP buzzwords, and see how they apply to finite state machines. More importantly, we’ll see how they make finite state machines easier to use and reason about.</p>
@@ -397,9 +366,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>Scala has many types of types. This talk will take you on a tour of Scala’s type system, show you how it is evolving in Scala 3, and help you understand how everything fits together.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f21" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f19" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f21-description" class="talk-descr" style="display: none">
+                  <div id="f19-description" class="talk-descr" style="display: none">
                     <p>When I teach Scala, I find that many Scala programmers aren’t familiar with the many kinds of types that Scala’s type system encompasses. In this talk I would like to try and cover all the types of types in Scala, such as nominal, structural, singleton, refinement, higher-kinded, parameterized, bounded, abstract, path-dependent, sub-, super-, union, intersection, and opaque types, and touch on variance to boot.</p>
                   </div>
                 </div>
@@ -410,9 +379,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>How can we take some re-usable code for asynchronous, schema-less data science backend integration, and give it the type-awareness it needs to comply with new schema requirements? Scalameta, code generation, and an sbt plugin to the rescue! The Go4 Decorator re-imagined with a bit of a typing twist!</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f22" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f20" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f22-description" class="talk-descr" style="display: none">
+                  <div id="f20-description" class="talk-descr" style="display: none">
                     <p>Our Play web apps’ data science reporting integration was beautiful - it separated concerns in so many elegant ways. Fundamentally, it (re)used some generic code, a Play action function, to instrument each web service endpoint on our edge service (reverse proxy). It kept the data reporting concern decoupled from our business logic, and it performed its work in its own execution context. Not only did it keep developers in the business of building features, but it did not use any threads from Play’s user-facing actor system dispatcher. This was essential for preventing outages: data reporting activities should never interfere with the consumer-facing functionality that powers our business. But there was one major drawback for the data science team: the data was schema-less.</p>
                     <p>Our data team introduced schema requirements, and all hell was breaking loose. We were given schema generation macros that constructed schemas based on data model classes. The data team suggested that our integration points should be moved to our backend services, which was where the data models were defined. They gave us examples where, in their view, we should place the integration points: directly in the code where the business logic was implemented! Not only would this violate our coveted separation of concerns, it could potentially conflate the execution contexts and make the code much harder to reason about and maintain.</p>
                     <p>Back in Java OO-land, circa Two Thousand , it was the Age of Go4 Design Patterns. The company I worked at had solved this type of problem with a Decorator. We used code generation tools to create boilerplate code in decorators that did the heavy lifting for these cross-cutting concerns. Developers could focus on defining interfaces, creating implementations, and writing business logic.</p>
@@ -428,9 +397,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>Let’s put these two things in conversation and implement the Game of Life in Scala!</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f23" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f21" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f23-description" class="talk-descr" style="display: none">
+                  <div id="f21-description" class="talk-descr" style="display: none">
                     <p>In this talk, we’ll shine the spotlight on the lesser-known dual of the Monad: the Comonad. If you’ve ever wondered where comonads are useful, or simply what they are, this talk is for you! First, we’ll introduce the concept of a comonad with commonplace data structures. We’ll also demonstrate how comonads can be encoded in Scala, and finally we’ll show how the Game of Life is an example of a domain in which the properties of comonadic computation are elegant and powerful.</p>
                   </div>
                 </div>
@@ -446,9 +415,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>When you compile Scala using a build tool, Zinc is called to do incremental compilation. But how does that work? This is a talk to explain what’s going on in Zinc.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f24" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f22" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f24-description" class="talk-descr" style="display: none">
+                  <div id="f22-description" class="talk-descr" style="display: none">
                     <p>I will try to go over the internal design of Zinc, the incremental compiler for Scala, in 15 minutes.</p>
                   </div>
                 </div>
@@ -459,9 +428,9 @@ Seemingly simple, but == has evolved throughout the history of Scala, and it’s
                     <p>We want to tell you how to bring Scala to more people. This might be other developers in your company or a diverse group within your community. What do they need and how do you get and keep them excited about Scala? Come along and find out!</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f25" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f23" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f25-description" class="talk-descr" style="display: none">
+                  <div id="f23-description" class="talk-descr" style="display: none">
                     <p>All of us had to learn Scala at some point, and many of us will find ourselves teaching Scala; perhaps to junior developers at our workplace or perhaps at an organisation such as ScalaBridge. In this talk we’ll describe our experiences at ScalaBridge London, where students ranged from those with no prior programming experience to those who held a PhD. We’ll discuss what worked and what didn’t work, and give guidance that applies to anyone who finds themselves teaching or learning Scala.
 ScalaBridge London brought together students from underrepresented groups with a shared goal of learning Scala. At the end of our first 12 week course some students secured interviews and even jobs as junior Scala engineers. Although some aspects of ScalaBridge are unique, the majority of what we did applies to anyone learning or teaching Scala.
 In this talk we will describe the teaching and mentoring approach we took at ScalaBridge. Students will discuss how the experience shaped their view of the Scala community, how much their knowledge and confidence with Scala grew, and the opportunities that presented themselves because of the course. Mentors will elaborate on teaching methods, mentoring approaches, and potential issues, to help other senior Scala engineers teaching juniors at work or in a course like this.</p>
@@ -475,23 +444,10 @@ In this talk we will describe the teaching and mentoring approach we took at Sca
                     <p>This talk will quickly go over why we’d want to do this, the “trick” we can use, and show how this trick can be generalized and used in many contexts.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f26" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f24" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f26-description" class="talk-descr" style="display: none">
+                  <div id="f24-description" class="talk-descr" style="display: none">
                     <p>This talk motivates the encoding of “free” structures, like the free monoid, functor, monad, etc., in programming languages. They all use a similar “trick”: reifying the semantics (operations) into syntax (data). And this has very concrete benefits for programmers!</p>
-                  </div>
-                </div>
-                <div class="talk">
-                  <div class="talk-title">Functional Error Handling with Cats</div>
-                  <div class="talk-level">Audience Level: Intermediate</div>
-                  <div class="talk-abstract">
-                    <p>Sometimes we want to keep or collect errors for later examination. We’ll use Cats to help us pick the story we want to tell when handling errors; accumulated errors or first error wins. Monads will be included!</p>
-                  </div>
-                  <div class="full-descr-button">
-                    <button id="f27" class="btn descr-button">Toggle Full Description</button>
-                  </div>
-                  <div id="f27-description" class="talk-descr" style="display: none">
-                    <p>Learn about the <code>ApplictiveError[_]</code>, <code>MonadError[_]</code>, <code>Validated[_, _]</code>, and <code>Chain[_]</code> type classes. And how to use them for handling errors in a functional way, via accumulation or monadically.</p>
                   </div>
                 </div>
                 <div class="talk">
@@ -503,9 +459,9 @@ Finding Python solutions sorely lacking in type safety &amp; support for higher-
 Meet ONNX-Scala.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f28" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f25" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f28-description" class="talk-descr" style="display: none">
+                  <div id="f25-description" class="talk-descr" style="display: none">
                     <h1>ONNX-Scala</h1>
                     <p>An ONNX (Open Neural Network Exchange) API and Code Generator for Typeful, Numerically Generic, Functional Deep Learning in Scala</p>
                     <h2>Project Overview</h2>
@@ -607,9 +563,9 @@ import org.emergentorder.onnx.backends._</p>
                     <p>Scala’s powerful type system helps you develop complex programs with less runtime errors. But sometimes understanding the types while programming becomes a challenge onto itself. I will show you how the IntelliJ Scala plugin helps you get a grip on your types to support your development flow.</p>
                   </div>
                   <div class="full-descr-button">
-                    <button id="f29" class="btn descr-button">Toggle Full Description</button>
+                    <button id="f26" class="btn descr-button">Toggle Full Description</button>
                   </div>
-                  <div id="f29-description" class="talk-descr" style="display: none">
+                  <div id="f26-description" class="talk-descr" style="display: none">
                     <p>Scala’s powerful type system helps you develop complex programs with less runtime errors. But sometimes understanding the types while programming becomes a challenge onto itself. I will show you how the Scala plugin for IntelliJ IDEA helps you get a grip on your types so that they can support your development flow instead of complicating it.</p>
                     <p>I will give a live programming tour of features supporting interaction with Scala’s type system, including:</p>
                     <ul>
