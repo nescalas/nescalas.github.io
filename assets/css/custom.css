@@ -224,6 +224,10 @@ div.full-descr-button {
   font-style: italic;
 }
 
+.talk .talk-speaker {
+  font-style: italic;
+}
+
 section code {
   font-size: smaller;
   background-color: white;
