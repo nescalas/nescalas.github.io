@@ -259,3 +259,16 @@ pre {
   outline: none;
   cursor: pointer;
 }
+
+.date-subtitle {
+  position: relative;
+  top: -0.7em;
+  font-style: italic;
+}
+
+.logo img {
+  padding-left: 4em;
+  padding-bottom: 2em;
+  height: auto;
+  width: 50%;
+}
