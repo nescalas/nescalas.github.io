@@ -280,4 +280,10 @@ It could be that we should think of this as the cost of doing business. It's als
 - D&I
 - LLC, bank acct
 - anon Q&A (enabling, moderating, etc.)
-- validating 
+- validating email addresses/users
+- better visibility about breakout rooms, facilitating casual interactions that ppl love from IRL confs.
+- online-only vs. mixed IRL/digital
+- speaker prep for webinar presenting, etc., test webinars
+- sponsors: reaching out, paperwork, accepting payments
+- CoC, supporting anonymous reporting to organizers
+
