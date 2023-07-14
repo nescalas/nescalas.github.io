@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>NEScala 2020: Confirmed Talks</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@nescalas">
+    <meta name="twitter:title" content="nescala 2020">
+    <meta name="twitter:description"
+        content="Your friendly neighborhood Scala conference, chugging through the Northeast since 2011.">
+    <meta name="twitter:image" content="/images/nescalas-logo.png">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  </head>
+  <body class="is-preload">
+    <section id="header">
+      <header>
+        <span class="image avatar">
+          <img src="images/nescalas-logo.png" alt=""/>
+        </span>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+      <footer>
+        <ul class="icons">
+          <li>
+            <a target="_blank" href="https://twitter.com/nescalas" class="icon fa-twitter">
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+    <div id="wrapper">
+      <div id="main">
+        <section id="proposed-talks">
+          <div data-position="center" class="image main">
+            <img src="images/bk-bridge-skyline.jpg" alt="" />
+          </div>
+          <div class="container">
+            <header class="major">
+              <span id="logo"></span>
+              <h2>Northeast Scala Symposium <span style="color: #777">2020</span><br />Confirmed Talks</h2>
+            </header>
+
+            <div class="talk">
+              <div class="talk-title">Streams: Your New Favorite Primitive</div>
+              <div class="talk-level">Audience Level: All</div>
+              <div class="talk-time">Time: 9:35 AM (45 minutes)</div>
+              <div class="talk-speaker">Speaker: Ryan Peters</div>
+              <div class="talk-abstract">
+                <p>Dive into generic streaming with FS2 and explore how FS2 - and streaming libraries in general - can often be the simplest way to solve many common issues. We’ll also examine fallacious definitions of “necessary/simple” in software and why learning new tech doesn’t have to make code more complicated.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f6" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f6-description" class="talk-descr" style="display: none">
+                <p>“Streams” are becoming an increasingly common abstraction in programming languages, and as an example of one we will take a brief dive into FS2 for Scala, a pure functional and generic streaming library, and how it’s applicable to numerous real-world scenarios that you might not initially think of. We will also explore the social issues involved when evangelizing new tech, and why sometimes we can run into fallacious roadblocks where invented complexity prevents us from actually doing the simplest thing. To that end, this talk is about why streaming is simple, generally applicable, similar across languages and libraries, and why you should be using it in more places than ever.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Comonads and the Game of Life</div>
+              <div class="talk-level">Audience Level: Intermediate</div>
+              <div class="talk-time">Time: 10:25 AM (30 minutes)</div>
+              <div class="talk-speaker">Speaker: Rebecca Mark</div>
+              <div class="talk-abstract">
+                <p>Have you heard of Conway’s Game of Life? How about comonads?</p>
+                <p>Let’s put these two things in conversation and implement the Game of Life in Scala!</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f21" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f21-description" class="talk-descr" style="display: none">
+                <p>In this talk, we’ll shine the spotlight on the lesser-known dual of the Monad: the Comonad. If you’ve ever wondered where comonads are useful, or simply what they are, this talk is for you! First, we’ll introduce the concept of a comonad with commonplace data structures. We’ll also demonstrate how comonads can be encoded in Scala, and finally we’ll show how the Game of Life is an example of a domain in which the properties of comonadic computation are elegant and powerful.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">What's Old is New Again! Adventures in Metaprogramming with Scalameta</div>
+              <div class="talk-level">Audience Level: All</div>
+              <div class="talk-time">Time: 11:10 AM (30 minutes)</div>
+              <div class="talk-speaker">Speaker: Eric Fredericks</div>
+              <div class="talk-abstract">
+                <p>How can we take some re-usable code for asynchronous, schema-less data science backend integration, and give it the type-awareness it needs to comply with new schema requirements? Scalameta, code generation, and an sbt plugin to the rescue! The Go4 Decorator re-imagined with a bit of a typing twist!</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f20" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f20-description" class="talk-descr" style="display: none">
+                <p>Our Play web apps’ data science reporting integration was beautiful - it separated concerns in so many elegant ways. Fundamentally, it (re)used some generic code, a Play action function, to instrument each web service endpoint on our edge service (reverse proxy). It kept the data reporting concern decoupled from our business logic, and it performed its work in its own execution context. Not only did it keep developers in the business of building features, but it did not use any threads from Play’s user-facing actor system dispatcher. This was essential for preventing outages: data reporting activities should never interfere with the consumer-facing functionality that powers our business. But there was one major drawback for the data science team: the data was schema-less.</p>
+                <p>Our data team introduced schema requirements, and all hell was breaking loose. We were given schema generation macros that constructed schemas based on data model classes. The data team suggested that our integration points should be moved to our backend services, which was where the data models were defined. They gave us examples where, in their view, we should place the integration points: directly in the code where the business logic was implemented! Not only would this violate our coveted separation of concerns, it could potentially conflate the execution contexts and make the code much harder to reason about and maintain.</p>
+                <p>Back in Java OO-land, circa Two Thousand , it was the Age of Go4 Design Patterns. The company I worked at had solved this type of problem with a Decorator. We used code generation tools to create boilerplate code in decorators that did the heavy lifting for these cross-cutting concerns. Developers could focus on defining interfaces, creating implementations, and writing business logic.</p>
+                <p>Fast forward ahead to today… Enter Scalameta! In this talk, I will describe the approach I took to preserve asynchrony and separation of concerns in our design. The sbt build plugin I created leverages Scalameta to generate type-aware code for each of our endpoints. This code complies beautifully with our schema requirements. A custom Play action function asynchronously invokes it to create a schema-compliant payload that can be shipped off to the data science backend. Along the way I learned some things about Scalameta - it’s really quite beautiful - and struggled through the minefield of building an sbt plugin.</p>
+                <p>This is truly an example of history repeating itself - the tools may be different, but the ideas never die. What’s old is new again!</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Bringing Scala to a Diverse Group of Students</div>
+              <div class="talk-level">Audience Level: All</div>
+              <div class="talk-time">Time: 11:45 AM (45 minutes)</div>
+              <div class="talk-speaker">Speaker: Elissavet Velli, Noel Welsh, Yifan Xing, Michelle Toelle</div>
+              <div class="talk-abstract">
+                <p>We want to tell you how to bring Scala to more people. This might be other developers in your company or a diverse group within your community. What do they need and how do you get and keep them excited about Scala? Come along and find out!</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f23" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f23-description" class="talk-descr" style="display: none">
+                <p>All of us had to learn Scala at some point, and many of us will find ourselves teaching Scala; perhaps to junior developers at our workplace or perhaps at an organisation such as ScalaBridge. In this talk we’ll describe our experiences at ScalaBridge London, where students ranged from those with no prior programming experience to those who held a PhD. We’ll discuss what worked and what didn’t work, and give guidance that applies to anyone who finds themselves teaching or learning Scala.
+		  ScalaBridge London brought together students from underrepresented groups with a shared goal of learning Scala. At the end of our first 12 week course some students secured interviews and even jobs as junior Scala engineers. Although some aspects of ScalaBridge are unique, the majority of what we did applies to anyone learning or teaching Scala.
+		  In this talk we will describe the teaching and mentoring approach we took at ScalaBridge. Students will discuss how the experience shaped their view of the Scala community, how much their knowledge and confidence with Scala grew, and the opportunities that presented themselves because of the course. Mentors will elaborate on teaching methods, mentoring approaches, and potential issues, to help other senior Scala engineers teaching juniors at work or in a course like this.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Analysis of Zinc</div>
+              <div class="talk-level">Audience Level: Intermediate</div>
+              <div class="talk-time">Time: 2:00 PM (15 minutes)</div>
+              <div class="talk-speaker">Speaker: Eugene Yokota</div>
+              <div class="talk-abstract">
+                <p>When you compile Scala using a build tool, Zinc is called to do incremental compilation. But how does that work? This is a talk to explain what’s going on in Zinc.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f22" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f22-description" class="talk-descr" style="display: none">
+                <p>I will try to go over the internal design of Zinc, the incremental compiler for Scala, in 15 minutes.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Understanding Scala's Type System</div>
+              <div class="talk-level">Audience Level: Intermediate</div>
+              <div class="talk-time">Time: 2:20 PM (30 minutes)</div>
+              <div class="talk-speaker">Speaker: Bill Venners</div>
+              <div class="talk-abstract">
+                <p>Scala has many types of types. This talk will take you on a tour of Scala’s type system, show you how it is evolving in Scala 3, and help you understand how everything fits together.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f19" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f19-description" class="talk-descr" style="display: none">
+                <p>When I teach Scala, I find that many Scala programmers aren’t familiar with the many kinds of types that Scala’s type system encompasses. In this talk I would like to try and cover all the types of types in Scala, such as nominal, structural, singleton, refinement, higher-kinded, parameterized, bounded, abstract, path-dependent, sub-, super-, union, intersection, and opaque types, and touch on variance to boot.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Scala eDSLs for domain-specific business logic</div>
+              <div class="talk-level">Audience Level: Intermediate</div>
+              <div class="talk-time">Time: 2:55 PM (45 minutes)</div>
+              <div class="talk-speaker">Speaker: Eleftherios “Lef” Ioannidis</div>
+              <div class="talk-abstract">
+                <p>A powerful pattern in functional programming is embedding small, declarative languages into a host language. I will demonstrate three interpreted eDSLs in Scala that solve three real business problems; time-series financial math, formatting financial reports and working with large data-frames.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f5" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f5-description" class="talk-descr" style="display: none">
+                <h2>Domain Specific means Business Logic</h2>
+                <p>In this talk I will make the case for small declarative languages embedded in Scala. We have found the eDSL design pattern can accelerate the writing of business logic while enforcing correctness properties via the Scala typesystem. I will show three examples of eDSLs that solve three different business problems.</p>
+                <h3>An eDSL for time-series analytics</h3>
+                <p>I will demonstrate an eDSL for elementary statistics and analytics on time-series data. In finance, we often work with periodic arrays of doubles that represent the monthly GDP of a country, quarterly sales margins of a company and more. In order to analyze time-series, some statistics such as arithmetic means, interpolations and Z-scores are necessary. There are plenty of pitfalls where new users can make mistakes, for example taking the standard deviation of an interpolated series will yield a lower volatility that doesn’t correspond to reality. Our eDSL uses Scala types to prohibit incorrect transformations, making the barrier to entry lower and the writing of valuable analytics logic faster.</p>
+                <h3>An eDSL for lazily computing on large dataframes</h3>
+                <p>Low-level control over timeseries is great, but sometimes we would like more high-level control via dataframes, similar to Pandas or Apache Spark. We would also like these dataframes to maintain the provenance of operations so we can reason about them in a backwards way and find errors. The final eDSL we will show reifies computation via Higher-Order Abstract Syntax (HOAS) and maintains the full provenance without maintaining the results of every intermediate computation step, which can be very expensive.</p>
+                <h3>An eDSL for formatting financial reports</h3>
+                <p>After generating good financial analytics, we would like to present them in a good looking report. Thankfully, there exist low-level APIs that allow plotting and charting data. Unfortunately, the low-level details such as fonts, colors and axes are intermingled with high-level control over data dimensionality and ordering. We will demonstrate a high-level eDSL that allows one to only care about data and layouting, pushing back formatting to the end, while allowing transparent, compositional access to data throughout the process.</p>
+                <h2>Approach</h2>
+                <p>There are several approaches to writing embedded DSLs, I would summarize my approach as avoiding unnecessary boilerplate, keeping the category theory knowledge needed at a strict minimum, while leveraging the Scala typesystem and Generalized Algebraic Datatypes (GADTs) as much as possible, to enforce correctness. This approach is motivated by my academic explorations in Formal Verification, where the eDSL semantics must perfectly reflect the language designer’s intention. My goal is to make a convincing case that eDSLs are an effective way to explore the domain of a business problem, while the usage of Scala as the host language is very encouraging, as it allows multiple eDSLs to compose nicely and run on the JVM.</p>
+              </div>
+	    </div>
+
+            <div class="talk">
+              <div class="talk-title">Catching More Bugs at Compile Time with Phantom Types and Implicits</div>
+              <div class="talk-level">Audience Level: Intermediate</div>
+              <div class="talk-time">Time: 2:55 PM (45 minutes)</div>
+              <div class="talk-speaker">Speaker: Maryam Aly</div>
+              <div class="talk-abstract">
+                <p>Are you writing a library for your team? Are you encountering bugs or runtime errors that you suspect can be found earlier? Learn how to use the magic of implicits with phantom types to catch more bugs at compile time!</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f9" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f9-description" class="talk-descr" style="display: none">
+                <p>One of the reasons why we chose Scala at Foursquare is for its expressive type system. We can use the type system to eliminate large classes of bugs at compile time. We have specifically used phantom types with implicit functions to create type safe builders for 3 separate use-cases: setting up API servers, constructing mongo queries, and defining translatable user-facing strings.</p>
+                <p>In this talk, you will learn what phantom types are and how you can combine them with implicits. You will learn how to employ them in increasingly complex ways, solving real-world examples along the way.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Careful With That Hammer, Eugene... (Toward Simpler Scala)</div>
+              <div class="talk-level">Audience Level: All</div>
+              <div class="talk-time">Time: 4:30 PM (45 minutes)</div>
+              <div class="talk-speaker">Speaker: Narek Asadorian</div>
+              <div class="talk-abstract">
+                <p>Put the hammer down, you don’t need recursion schemes to parse a JSON file! This talk introduces the principles of Simple Functional Programming, a way to make advanced Scala code approachable to newcomers. We’ll dive into real life code examples, uncovering common anti-patterns and their antidotes.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f0" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f0-description" class="talk-descr" style="display: none">
+                <p>At the turn of the new year the hashtag #BoringHaskell sparked a debate in the functional programming Twitterverse, drawing into question the overuse of advanced FP techniques at work and how it deters newcomers from the functional paradigm. The Scala community joined in on this discussion, bringing forth its own closet of skeletons and posing some existential questions to itself:</p>
+                <ul>
+                  <li>Does functional programming in Scala need a rebrand?</li>
+                  <li>Have we gone too far with types and freaky language features?</li>
+                  <li>Should we simplify our code for the sake of junior developers?</li>
+                  <li>What does simple even mean?</li>
+                </ul>
+                <p>In this talk, we aim to settle the debate for Scala programmers based on a hard truth to swallow – functional programming is already simple, but we’ve been implementing it in an unfriendly way.</p>
+                <p>First, we look to accurately define what simplicity means in the context of programming. We then introduce a decision framework for Simple Functional Programming centered around three tenets: Composability, Caution and Cleanliness. With these principles in mind, we dive into real world code examples demonstrating effective and confusing deployments of FP. Along the way, we highlight common antipatterns such as completion chasing, type Tetris, and the dreaded Hammer Syndrome.</p>
+                <p>The intended audience for this talk includes programmers of all levels. Advanced practitioners will walk away with new strategies for writing approachable code, and less experienced developers will gain new confidence in utilizing functional patterns and libraries. Familiarity with Scala, its syntax and some familiarity with functional programming concepts are assumed, but not required.</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">How to Eliminate Surprises In Your Data</div>
+              <div class="talk-level">Audience Level: Beginner</div>
+              <div class="talk-time">Time: 5:20 PM (30 minutes)</div>
+              <div class="talk-speaker">Speaker: Anne, Idrees Khan</div>
+              <div class="talk-abstract">
+                <p>How do you know you can trust the accuracy of the data flowing through a pipeline, and the insights derived from it? At Spotify, we’ve made both cultural changes and Scala tools to increase confidence and eliminate surprises in our data contents, and solve problems in the wide space of data quality.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f12" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f12-description" class="talk-descr" style="display: none">
+                <p>Abstract:
+		  How do you know you can trust the accuracy of the data flowing through a pipeline, and the insights derived from it? At Spotify, we have an infrastructure team focused on data quality to address this problem. From the cultural changes we’re making to give data engineers a quality mindset, to the specific tools we’ve written, we’ll explain how we increase confidence and eliminate surprises in our data contents, and how we approach problems in the wide space of ‘data quality.’ You’ll learn about a few key moments in the pipeline lifecycle when data quality might be compromised, and the approach we took to improving them.</p>
+                <p>Some tools we’ll cover include:
+		  https://github.com/spotify/ratatool
+		  https://github.com/spotify/scio
+		  https://github.com/propensive/magnolia
+		  https://github.com/typelevel/scalacheck</p>
+              </div>
+            </div>
+
+            <div class="talk">
+              <div class="talk-title">Free Monoids: Monoids for Anything!</div>
+              <div class="talk-level">Audience Level: All</div>
+              <div class="talk-time">Time: 5:55 PM (15 minutes)</div>
+              <div class="talk-speaker">Speaker: Adam Rosien</div>
+              <div class="talk-abstract">
+                <p><em>“Can you make a <code>Monoid[A]</code> for any <code>A</code>?”</em> It seems impossible, but you can do it if you cheat.</p>
+                <p>This talk will quickly go over why we’d want to do this, the “trick” we can use, and show how this trick can be generalized and used in many contexts.</p>
+              </div>
+              <div class="full-descr-button">
+                <button id="f24" class="btn descr-button">Toggle Full Description</button>
+              </div>
+              <div id="f24-description" class="talk-descr" style="display: none">
+                <p>This talk motivates the encoding of “free” structures, like the free monoid, functor, monad, etc., in programming languages. They all use a similar “trick”: reifying the semantics (operations) into syntax (data). And this has very concrete benefits for programmers!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="footer">
+        <div class="container align-center">
+          <p>Made possible with <i class="fa fa-heart"></i>from the<a target="_blank" href="https://scala-phase.org">Philadelphia</a>, <a target="_blank" href="https://www.meetup.com/ny-scala/">New York</a>, and<a target="_blank" href="https://www.meetup.com/boston-scala/">Boston</a>Scala Enthusiasts.</p>
+          <ul class="copyright">
+            <li>
+              <a href="2019/">2019</a>
+            </li>
+            <li>
+              <a href="2018/">2018</a>
+            </li>
+            <li>
+              <a href="2017/">2017</a>
+            </li>
+            <li>
+              <a href="2016/">2016</a>
+            </li>
+            <li>
+              <a href="2015/">2015</a>
+            </li>
+            <li>
+              <a href="2014/">2014</a>
+            </li>
+            <li>
+              <a href="2013/">2013</a>
+            </li>
+            <li>
+              <a href="2012/">2012</a>
+            </li>
+          </ul>
+          <ul class="copyright">
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+
+          // swap elements array[i] and array[j]
+          // we use "destructuring assignment" syntax to achieve that
+          // you'll find more details about that syntax in later chapters
+          // same can be written as:
+          // let t = array[i]; array[i] = array[j]; array[j] = t
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+      $.fn.shuffleChildren = function() {
+        $.each(this.get(), function(index, el) {
+          var $el = $(el);
+          var $find = $el.children();
+
+          shuffle($find);
+
+          $el.empty();
+          $find.appendTo($el);
+        });
+      };
+
+      $('.talks').shuffleChildren();
+
+      $(".descr-button").click(function(e) {
+        var buttonID = $(this).attr("id");
+        $("#" + buttonID + "-description").toggle()
+      });
+
+    });
+    </script>
+  </body>
+</html>
