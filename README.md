@@ -1,5 +1,5 @@
 # nescalas.github.io
-Static website for NEScala (2020, and also years past)
+Static website for NEScala (2023, and also years past)
 
 ## Preview
 * clone this repo
