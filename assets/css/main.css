@@ -47,13 +47,13 @@ p {
   font-size: 14px;
 }
 
-ul, ol {
+.main-page ul, ol {
   list-style: outside none none;
   margin: 0;
   padding: 0;
 }
 
-ul li, ol li {
+.main-page ul li, ol li {
   list-style: none;
 }
 
@@ -413,6 +413,17 @@ ul li, ol li {
   line-height: 20px;
   margin: 0;
   padding-right: 50px;
+}
+
+/* Supporting Pages Start */
+.title-area {
+  background: #222222;
+  height: 50vh;
+}
+
+/* CoC Area Start */
+.coc .subsection {
+  padding-bottom: 1em;
 }
 
 /* ==========================================================================
