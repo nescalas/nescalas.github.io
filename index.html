@@ -1,246 +1,342 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>NE Scala 2023</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=no"/>
-  <link rel="stylesheet" href="assets/css/main.css"/>
-  <link rel="stylesheet" href="assets/css/custom.css"/>
-  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
-  <script src="https://kit.fontawesome.com/cb17a1b464.js" crossorigin="anonymous"></script>
-</head>
-<body class="is-preload">
+  <head>
+    <!-- Meta Tags Start -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Northeast Scala Symposium">
+    <meta name="description" content="A developer focused conference having to do with all topics related to the Scala programming language; held yearly in the northeast of the United States.">
 
-<!-- Header -->
-<section id="header">
-  <header>
-    <span class="image avatar"><img src="images/nescalas-logo.png" alt=""/></span>
-  </header>
-  <nav id="nav">
-    <ul>
-      <li><a href="#about" class="active">About</a></li>
-      <li><a href="#dates">Dates</a></li>
-      <li><a href="#talks">Talks</a></li>
-      <li><a href="#tickets">Tickets</a></li>
-      <li><a href="#sponsors">Sponsors</a></li>
-      <li><a href="#code">Code of Conduct</a></li>
-    </ul>
-  </nav>
-  <footer>
-    <ul class="icons">
-      <li>
-        <a target="_blank" href="https://fosstodon.org/@nescala"><i class="fa-brands fa-mastodon"></i></a>
-      </li>
-    </ul>
-  </footer>
-</section>
+    <meta name="og:site_name" content="NEScala">
+    <meta name="og:type" content="website">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:url" content="https://nescalas.github.io">
+    <meta name="og:title" content="Homepage">
+    <meta name="og:description" content="A developer focused conference having to do with all topics related to the Scala programming language; held yearly in the northeast of the United States.">
+    <!-- Meta Tags End -->
 
-<!-- Wrapper -->
-<div id="wrapper">
+    <title>NEScala 2023</title>
 
-  <!-- Main -->
-  <div id="main">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Mastodon CSS -->
+    <link rel="stylesheet" href="assets/css/mastodon-timeline.min.css" />
 
-    <!-- About -->
-    <section id="about">
-      <div class="image main" data-position="center">
-        <img src="images/cambridge-charles-river-boat.jpg" alt=""/>
-      </div>
+  </head>
+  <body class="main-page">
+
+    <!-- Header Start -->
+    <header id="header-wrap">
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div>
+              <a href="#" class="navbar-brand">
+                <img src="2020/images/nescalas-logo.png" style="height: auto; max-width: 75px">
+              </a>NEScala
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">Schedules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tickets">Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#coc">Code of Conduct</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+      <section id="main">
+        <div class="text-center hero-splash">
+          <div class="mask" style="height: 100vh;">
+            <div class="d-flex justify-content-center align-items-center h-100 text-white">
+              <h1 class="display-3">Northeast Scala Symposium<br>2023</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+    <!-- Dates Section Start -->
+    <section class="countdown-timer section-padding">
       <div class="container">
-        <header class="major">
-          <!--
-            Note that id="logo" defines the logo that shows up at the very top in
-            the mobile layout. See js/main.js. If not set, "undefined" will show
-            up. We want it to be empty.
-          -->
-          <span id="logo"></span>
-          <h2>Northeast Scala Symposium <span style="color: #777">2023</span></h2>
-        </header>
-        <p>
-          Join us online on <b>October 26-28, 2023</b>, to celebrate <b>the return of NE Scala</b>!
-        </p>
-        <p>
-          Since 2011, the New York, Boston, and Philadelphia Scala meetups have
-          hosted this community-driven Scala conference. Because the
-          Northeast Scala Symposium (NE Scala, to its friends) is
-          community-driven, <i>you</i> help create it. The NE Scala talks are
-          proposed by the attendees, who then vote to select which will be given.
-        </p>
-        <p>
-          As we put things back together again, after several pandemic-induced years of separation, we're keeping it
-          light and easy this time around, so we can focus on rebuilding the community. So we're going to do another
-          round of virtual conference this year, with an eye towards hopefully switching back to in-person next time
-          around.
-        </p>
-        <p>
-          That said, we're looking to have the same great three days of talks and socializing as always. (And we have
-          ideas about encouraging the various local Scala communities to leverage this chance.)
-        </p>
+        <div class="row text-center">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="heading-count">
+              <h2>Save The Date</h2>
+            </div>
+            <div>
+              <h4>Oct. 26-28, 2023</h4>
+              <p>Online Only</p>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row time-countdown justify-content-center">
+              <div id="clock" class="time-count"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="dates">
+    <!-- Dates Section End -->
+    
+    <!-- Schedule Section Start -->
+    <section id="schedules" class="schedule section-padding">
       <div class="container">
-        <p>
-          <h2>Dates</h2>
-          <p>
-            As usual, NE Scala and the Typelevel Summit will pair up for two days of recorded talks, followed by an "unconference" day:
-          </p>
-          <ul>
-            <li><b>Thursday, October 26, 2023</b>: Typelevel Summit</li>
-            <li><b>Friday, October 27, 2023</b>: <a href="#about">NE Scala Conference</a></li>
-            <li><b>Saturday, October 28, 2023</b>: <a href="#TODO">NE Scala Unconference</a></li>
-          </ul>
-        </p>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header">
+              <h1 class="section-title text-center">Speaker Schedule</h1>
+              <p> Are you building a cool project? Do you have something to say about the Scala community? What interesting stuff can you teach to everybody? We'll soon be issuing a Call for Papers for NE Scala proper. We'll be looking for talks in a variety of lengths (not every topic needs an hour), on a variety of topics relating to the Scala language, ecosystem, and community.</p>
+              <p>So think about what you might find fun to talk about, and watch this space! </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="schedule-tab-title col-md-3 col-lg-3 col-xs-12">
+            <div class="table-responsive">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="tab-0" data-toggle="tab" href="#day-one" role="tab" aria-controls="day-one" aria-expanded="true">
+                    <div class="item-text">
+                      <h4>Typelevel Summit</h4>
+                      <h5>Thursday, Oct. 26</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tab-1" data-toggle="tab" href="#day-two" role="tab" aria-controls="day-two">
+                    <div class="item-text">
+                      <h4>NE Scala Conference</h4>
+                      <h5>Friday, Oct. 27</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tab-2" data-toggle="tab" href="#day-three" role="tab" aria-controls="day-three">
+                    <div class="item-text">
+                      <h4>The Unconference</h4>
+                      <h5>Saturday, Oct 28</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="schedule-tab-content col-md-9 col-lg-9 col-xs-12 clearfix">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="day-one" role="tabpanel" aria-labelledby="day-one">
+                <div id="acc1">
+                  <div class="card">
+                    <div id="head-1">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#tt-1" aria-expanded="false" aria-controls="tt-1">
+                        <div class="images-box">
+                          <img class="img-fluid" src="assets/img/profile-picture-question-mark.jpg" alt="">
+                        </div>                     
+                        <span class="time">Keynote Speaker</span>
+                        <h4>Interested in the keynote address?</h4>
+                        <h5 class="name">Suggest a Name</h5>
+                      </div>
+                    </div>
+                    <div id="tt-1" class="collapse show" aria-labelledby="head-1" data-parent="#acc1">
+                      <div class="card-body">
+                        <p>We're open to ideas on what sorts of topics would be interesting to folks in the Typelevel world.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="head-2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#tt-2" aria-expanded="false" aria-controls="tt-2">
+                        <div class="images-box">
+                          <img class="img-fluid" src="assets/img/profile-picture-question-mark.jpg" alt="">
+                        </div>
+                        <span class="time">TBD</span>
+                        <h4>Your Talk</h4>
+                        <h5 class="name">Your Name</h5>
+                      </div>
+                    </div>
+                    <div id="tt-2" class="collapse" aria-labelledby="head-2" data-parent="#acc1">
+                      <div class="card-body">
+                        <p>Summary of your talk goes right here.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="day-two" role="tabpanel" aria-labelledby="day-two">
+                <div id="acc2">
+                  <div class="card">
+                    <div id="head2-1">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#tu-1" aria-expanded="false" aria-controls="tu-1">
+                        <div class="images-box">
+                          <img class="img-fluid" src="assets/img/profile-picture-question-mark.jpg" alt="">
+                        </div>                     
+                        <span class="time">TBD</span>
+                        <h4>Your Talk</h4>
+                        <h5 class="name">Your Name</h5>
+                      </div>
+                    </div>
+                    <div id="tu-1" class="collapse show" aria-labelledby="head2-1" data-parent="#acc2">
+                      <div class="card-body">
+                        <p>Summary of your talk.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div id="head2-2">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#tu-2" aria-expanded="false" aria-controls="tu-2">
+                        <div class="images-box">
+                          <img class="img-fluid" src="assets/img/profile-picture-question-mark.jpg" alt="">
+                        </div>                     
+                        <span class="time">TBD</span>
+                        <h4>Another Talk</h4>
+                        <h5 class="name">Someone else</h5>
+                      </div>
+                    </div>
+                    <div id="tu-2" class="collapse" aria-labelledby="head2-2" data-parent="#acc2">
+                      <div class="card-body">
+                        <p>This was totally your idea! Why didn't you submit this talk yourself?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="day-three" role="tabpanel" aria-labelledby="day-three">
+                <div id="accordion3">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>TBD</h4>
+                      <span class="name">This portion of the conference will be TBD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="talks">
+    <!-- Schedule Section End -->
+    
+    <!-- Sponsors Section Start -->
+    <section id="sponsors" class="section-padding">
       <div class="container">
-        <h2>Talks</h2>
-        <p>
-          Are you building a cool project? Do you have something to say about the Scala community? What interesting
-          stuff can you teach to everybody?
-        </p>
-        <p>
-          We'll soon be issuing a Call for Papers for NE Scala proper. We'll be looking for talks in a variety of lengths
-          (not every topic needs an hour), on a variety of topics relating to the Scala language, ecosystem, and
-          community.
-        </p>
-        <p>
-          So think about what you might find fun to talk about, and watch this space!
-        </p>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title">Sponsor</h1>
+              <p>Would your company be interested in sponsoring the conference? Drop us a note at 
+                <a href="mailto:sponsors@nescala.org">sponsors@nescala.org</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="tickets">
+    <!-- Sponsors Section End -->
+
+    <!-- Tickets Start -->
+    <section id="tickets" class="section-padding">
       <div class="container">
-        <h2>
-          <a href="https://www.eventbrite.com/e/northeast-scala-symposium-typelevel-summit-2020-tickets-92788556069">
-            <img class="inline" src="images/nescalas-logo-r.png" alt=""/>
-            <img class="inline" src="images/nescalas-logo-r.png" alt=""/>
-            Tickets
-            <img class="inline" src="images/nescalas-logo-l.png" alt=""/>
-            <img class="inline" src="images/nescalas-logo-l.png" alt=""/>
-          </a>
-        </h2>
-        <p>
-          Ticket information to come! We're still discussing prices, but since it's an online conference we'll be looking
-          to keep it inexpensive.
-        </p>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title">Tickets</h1>
+              <p>Ticket information to come! We're still discussing prices, but since it's an online conference we'll be looking to keep it inexpensive.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- Tickets End -->
 
-    <!-- Sponsors -->
-    <section id="sponsors">
+    <!-- Code of Conduct Start -->
+    <section id="coc" class="section-padding">
       <div class="container">
-        <h2>Sponsors</h2>
-        <p>
-          Would your company be interested in sponsoring the conference? Drop us a note at
-          <a href="mailto:sponsors@nescala.org">sponsors@nescala.org</a>
-        </p>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header">
+              <h1 class="section-title text-center">Code of Conduct</h1>
+              <p>The Northeast Scala Symposium is committed to providing an environment that encourages and empowers its 
+ members to teach, learn, and collaborate. We welcome every skill level – from beginners to experts – to participate in and advance the Scala community with us.
+              </p>
+              <p>To foster an inclusive, equitable, safe, diverse, and thriving community, should you choose to engage with our community as a participant or speaker, you agree to our Code of Conduct outlined <a href="coc.html" alt="Full Code of Conduct">here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <!-- Code of Conduct -->
-    <section id="code">
+    <!-- Code of Conduct End -->  
+  
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
       <div class="container">
-        <h2>Code of Conduct</h2>
-        <p>
-          The Northeast Scala Symposium is committed to providing an environment
-          that encourages and empowers its members to teach, learn, and
-          collaborate.  We welcome every skill level – from beginners to
-          experts – to participate and advance the Scala community.
-        </p>
-
-        <p>
-          Importantly, our members represent multiple dimensions of
-          difference – across gender, gender identity and expression, sexual
-          orientation, disability, physical appearance, body size, race,
-          religion, and more – and we want everyone to feel comfortable
-          bringing their full selves to the conference.
-        </p>
-
-        <p>
-          This means all members should apply a high degree of care and
-          consideration to how they interact with others. We do not tolerate
-          harassment in any form, but also want to go even further in
-          actively creating an environment of belonging, inclusion, safety.
-          Anyone acting contrary to the spirit of this mission will be asked to
-          leave the conference at the discretion of the organizers.
-        </p>
-
-        <p>
-          During the conference, we have dedicated incident handlers
-          and a Slack channel available for feedback. Please see the
-          <a href="#reporting">Reporting and Feedback</a> section for details.
-        </p>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title">Follow on Mastodon</h1>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-xs-12">
+            <div class="mt-timeline">
+              <div id="mt-body" class="mt-body" role="feed">
+                <div class="loading-spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- Contact Us Section End -->
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="container align-center">
-      <p>
-        Made possible with <i class="fa fa-heart"></i> from the,
-        <a target="_blank" href="https://scala-phase.org">Philadelphia</a>,
-        <a target="_blank" href="http://www.meetup.com/ny-scala/">New York</a>,
-        and <a target="_blank" href="http://www.meetup.com/boston-scala/">Boston</a>
-        Scala Enthusiasts.
-      </p>
-      <ul class="copyright">
-         <li>
-          <a href="2020/">2020</a>
-        </li>
-         <li>
-          <a href="2019/">2019</a>
-        </li>
-        <li>
-          <a href="2018/">2018</a>
-        </li>
-        <li>
-          <a href="2017/">2017</a>
-        </li>
-        <li>
-          <a href="2016/">2016</a>
-        </li>
-        <li>
-          <a href="2015/">2015</a>
-        </li>
-        <li>
-          <a href="2014/">2014</a>
-        </li>
-        <li>
-          <a href="2013/">2013</a>
-        </li>
-        <li>
-          <a href="2012/">2012</a>
-        </li>
-        <li>
-          <a href="2011/">2011</a>
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>
-          Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+      <div class="container align-center text-center text-white">
+        <p>
+          Made possible by
+          <a target="_blank" href="https://scala-phase.org">Philadelphia</a>,
+          <a target="_blank" href="http://www.meetup.com/ny-scala/">New York</a>,
+          and <a target="_blank" href="http://www.meetup.com/boston-scala/">Boston</a>
+          Scala Enthusiasts.
+        </p>
+        <div> 
+          <a href="2020/">2020</a> | <a href="2019/">2019</a> |<a href="2018/">2018</a> | <a href="2017/">2017</a> | <a href="2016/">2016</a> | <a href="2015/">2015</a> | <a href="2014/">2014</a> | <a href="2013/">2013</a> | <a href="2012/">2012</a> | <a href="2011/">2011</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
 
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
+    <!-- JS Start -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mastodon-timeline.min.js"></script>
+    <!-- JS End -->
+      
+  </body>
 </html>
