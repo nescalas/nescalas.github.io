@@ -29,24 +29,6 @@
   .schedule .card-header h4 {
     font-size: 14px;
   }
-  .padding-none:nth-child(1) {
-    border-left: none;
-  }
-  .padding-none:nth-child(3) {
-    border-left: none;
-  }
-  .padding-none:nth-child(4) {
-    border-bottom: none;
-    border-left: 1px solid #ddd;
-  }
-  .padding-none:nth-child(5) {
-    border-bottom: none;
-    border-left: none;
-  }
-  .padding-none:nth-child(6) {
-    border-top: 1px solid #ddd;
-    border-bottom: none;
-  }
   .footer-area h3 {
     margin-top: 30px;
   }
@@ -65,24 +47,6 @@
   }
   .accordion .header-title {
     font-size: 12px;
-  }
-  .padding-none:nth-child(1) {
-    border-left: none;
-  }
-  .padding-none:nth-child(3) {
-    border-left: none;
-  }
-  .padding-none:nth-child(4) {
-    border-bottom: none;
-    border-left: 1px solid #ddd;
-  }
-  .padding-none:nth-child(5) {
-    border-bottom: none;
-    border-left: none;
-  }
-  .padding-none:nth-child(6) {
-    border-top: 1px solid #ddd;
-    border-bottom: none;
   }
   .footer-area h3 {
     margin-top: 30px;
@@ -120,14 +84,5 @@
   }
   .footer-area h3 {
     margin-top: 30px;
-  }
-  .padding-none:nth-child(1) {
-    border-bottom: 1px solid #ddd;
-  }
-  .padding-none:nth-child(4) {
-    border-bottom: 1px solid #ddd;
-  }
-  .padding-none:nth-child(5) {
-    border-bottom: 1px solid #ddd;
   }
 }
