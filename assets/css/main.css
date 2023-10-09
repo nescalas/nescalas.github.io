@@ -354,6 +354,12 @@ p {
   margin-bottom: 5px;
 }
 
+.schedule .card-header .name a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
 .schedule .card-body {
   padding: 15px 70px 15px 110px;
   background: #fff;
